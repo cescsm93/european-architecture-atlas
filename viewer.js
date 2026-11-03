@@ -241,7 +241,8 @@ function updateDate(id){
  link.title='查看建设年代资料';
 }
 function updateCatalog(){
- const byUse=allIds.filter(id=>matches(id,0,useFilter.value));
+ const query=$('#catalogSearch').value.trim().toLocaleLowerCase();
+ const byUse=allIds.filter(id=>matches(id,0,useFilter.value)&&(!query||[nameOf(id),...(exhibits[id]?.slice(0,5)||[id==='paris'?'Notre-Dame de Paris 法国 巴黎':'Kölner Dom 德国 科隆'])].join(' ').toLocaleLowerCase().includes(query)));
  const styles=[...new Set(byUse.flatMap(id=>stylesByBuilding[id][1].split('|')))];
  fillFilter(styleFilter,styles,'全部风格与时期');
  const list=byUse.filter(id=>matches(id,1,styleFilter.value));
@@ -254,6 +255,8 @@ function updateCatalog(){
   }
   countries.get(country).append(new Option(nameOf(id),id));
  }
+ picker.disabled=!list.length;
+ if(!list.length){picker.replaceChildren(new Option('没有匹配建筑',''));$('#matchCount').textContent='0 / '+allIds.length+' 座';return;}
  picker.replaceChildren(...countries.values());
  picker.value=list.includes(building)?building:list[0];
  $('#matchCount').textContent=list.length+' / '+allIds.length+' 座';
@@ -261,6 +264,7 @@ function updateCatalog(){
 }
 fillFilter(useFilter,[...new Set(allIds.flatMap(id=>stylesByBuilding[id][0].split('|')))],'全部功能');
 useFilter.onchange=styleFilter.onchange=updateCatalog;
+$('#catalogSearch').oninput=updateCatalog;
 picker.onchange=()=>switchBuilding(picker.value);
 updateCatalog();updateDate(building);
 
@@ -278,3 +282,7 @@ function resize(){const w=stage.clientWidth,h=stage.clientHeight,newAspect=w/h,f
 function labels(){for(let i=0;i<topics.length;i++){const t=topics[i],p=new T.Vector3(...t.p).project(camera);t.el.hidden=p.z>1||p.z< -1||Math.abs(p.x)>.95||Math.abs(p.y)>.92||(['roof','cut','explode'].includes(mode)&&i===5)||(cut&&t.p[0]>0);t.el.style.left=(p.x*.5+.5)*stage.clientWidth+'px';t.el.style.top=(-p.y*.5+.5)*stage.clientHeight+'px';t.el.classList.toggle('active',selected===i)}}
 function loop(now){requestAnimationFrame(loop);if(document.hidden)return;if(now-previous<(cpu?110:25))return;const dt=(now-previous)/1000;previous=now;if(transition){const k=Math.min(1,(now-transition.start)/(cpu?400:850));const e=k*k*(3-2*k);camera.position.lerpVectors(transition.a,transition.b,e);controls.target.lerpVectors(transition.c,transition.d,e);if(k===1)transition=null;dirty=true}const changed=controls.update(dt);if(dirty||changed||controls.autoRotate){renderer.render(scene,camera);labels();dirty=false}}
 $('#loading').remove();requestAnimationFrame(loop);document.body.dataset.ready='true';
+
+function fitBuildingTitle(){const title=$('#building-title');title.style.fontSize='';let size=parseFloat(getComputedStyle(title).fontSize);while(title.scrollWidth>title.clientWidth+1&&size>12){size-=1;title.style.fontSize=size+'px';}}
+new MutationObserver(()=>requestAnimationFrame(fitBuildingTitle)).observe($('#building-title'),{childList:true,characterData:true,subtree:true});
+window.addEventListener('resize',fitBuildingTitle);if(document.fonts)document.fonts.ready.then(fitBuildingTitle);requestAnimationFrame(fitBuildingTitle);
