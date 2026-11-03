@@ -1,0 +1,9 @@
+import fs from 'node:fs/promises';
+const enc=s=>'data:text/javascript;base64,'+Buffer.from(s).toString('base64');
+const three=enc(await fs.readFile('dist/vendor/three.module.js','utf8'));
+const util=enc(await fs.readFile('dist/vendor/BufferGeometryUtils.js','utf8'));
+const orbit=enc(await fs.readFile('dist/vendor/OrbitControls.js','utf8'));
+const model=enc((await fs.readFile('model.js','utf8')).replace("'./dist/vendor/BufferGeometryUtils.js'",JSON.stringify(util)));
+const app=(await fs.readFile('viewer.js','utf8')).replace("'./dist/vendor/OrbitControls.js'",JSON.stringify(orbit)).replace("'./model.js'",JSON.stringify(model));
+let page=(await fs.readFile('page.html','utf8')).replace('<!--IMPORTMAP-->','<!--\n'+(await fs.readFile('LICENSE','utf8'))+'\n'+(await fs.readFile('dist/vendor/LICENSE.txt','utf8'))+'\n--><script type="importmap">'+JSON.stringify({imports:{three}})+'</script>').replace('/*APP*/',()=>app);
+await fs.writeFile('dist/index.html',page);if(process.env.ATLAS_EXPORT)await fs.writeFile(process.env.ATLAS_EXPORT,page);console.log('Standalone HTML:',Buffer.byteLength(page),'bytes');

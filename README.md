@@ -11,4 +11,3 @@
 在解压后的项目文件夹内运行 `node build.mjs`，输出 dist/index.html。可通过 ATLAS_EXPORT 指定额外单文件输出路径。`node tests/validate-structure.mjs` 实例化全部 50 座建筑，检查几何、法线、纹理坐标与图层。
 
 模型、材质与应用代码使用 MIT 许可，Three.js 的 MIT 许可见 dist/vendor/LICENSE.txt。原创教学模型采用简化的构件和室内空间，无法用于尺寸测量或结构计算。
-
