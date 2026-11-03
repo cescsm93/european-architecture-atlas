@@ -70,7 +70,11 @@ export function buildExpansion(kind, api) {
   for(let x=-24;x<=24;x+=6)statueSimple(x,20,35);points=[[0,29,0],[0,8,35]];break;
  }
  case 'sagrada':{
-  tint('stone',0xc2a582);tint('roof',0x9e8c67);rectWindows(34,33,70);
+  tint('stone',0xc2a582);tint('roof',0x9e8c67);
+  for(const sg of [-1,1])for(let z=-28;z<=28;z+=8){window(5,21,sg*16,8,z,'walls',sg*Math.PI/2,8);box(1,8,8,sg*16,4,z,'walls');box(1.6,34,1.6,sg*17,17,z-4,'supports');pinnacle(sg*17,34,z-4,6,'supports');}
+  roof(20,66,0,31,0);for(const sg of [-1,1])roof(8,66,sg*13,24,0);
+  for(const z of [-32,32]){for(const x of [-10,0,10]){arch(8,25,x,0,z,'facade',0,.6);for(const sg of [-1,1])beam([x+sg*5,0,z],[x+sg*2,33,z],.7,'facade');}rose(4,0,28,z);}
+
   for(const z of [-31,31])for(const [i,x]of [-16,-6,6,16].entries()){
    const ht=i===0||i===3?67:79;const g=new T.LatheGeometry([[3.4,0],[3.7,25],[2.7,ht*.72],[.7,ht]].map(p=>new T.Vector2(...p)),16);put(g,x,0,z,'towers');
    for(let y=28;y<ht-3;y+=5)for(let j=0;j<8;j++){const a=j*Math.PI/4;cyl(.5,2.5,x+2.8*Math.sin(a),y,z+2.8*Math.cos(a),'detail','glass',6);}
@@ -117,7 +121,7 @@ export function buildExpansion(kind, api) {
   box(82,1,20,0,10,0,'base');const prior=Object.fromEntries(Object.entries(api.buckets).map(([k,v])=>[k,v.length]));rectWindows(82,14,18); // relocate shell above bridge deck
   // front() starts at zero; move its wall and window geometry up onto the deck.
   for(const k of Object.keys(api.buckets))for(const g of api.buckets[k].slice(prior[k]||0))g.translate(0,10,0);
-  roof(82,20,0,24,0,Math.PI/2);rectWindows(24,28,28,-46,0);for(const z of [-13,13])turret(-53,z,0,29,3);
+  roof(20,82,0,24,0,Math.PI/2);rectWindows(24,28,28,-46,0);for(const z of [-13,13])turret(-53,z,0,29,3);
   points=[[0,10,10],[-46,28,0]];break;
  }
  case 'belem':{
