@@ -1,3 +1,4 @@
+import {buildExpansion} from './expansion.js';
 import * as T from 'three';
 import {mergeGeometries} from './dist/vendor/BufferGeometryUtils.js';
 // Tileable noise fields give each material a grain at several physical scales.
@@ -248,6 +249,7 @@ export function buildCathedral(kind='paris'){
   box(w+1.55,.23,d+1.55,x,h-.33,z,'detail','edge');
  };
  const portico=(w,z,n=8,h=18)=>{for(let j=0;j<n;j++)column(-w/2+j*w/(n-1),1,z,h);box(w+4,1.5,9,0,h+2,z-2,'facade');pediment(w+5,7,0,h+3,z-5)};
+ if(buildExpansion(kind,{T,root,box,cyl,put,beam,line,roof,arch,window,rose,pinnacle,column,front,dome,pediment,mats,palette,buckets})){for(const l of ['facade','towers','walls','interior','supports','roof','spire','detail','base'])layers[l]??=new T.Group();return finish();}
  // Entrances and terraces belong to each exhibit; the studio floor is shared.
  if(kind==='pantheon'){const sh=new T.Shape();sh.absarc(0,0,23,0,Math.PI*2,false);const hole=new T.Path();hole.absarc(0,0,19,0,Math.PI*2,true);sh.holes.push(hole);const g=new T.ExtrudeGeometry(sh,{depth:23,bevelEnabled:false,curveSegments:48});g.rotateX(-Math.PI/2);put(g,0,1,-14,'walls');dome(23,19,0,24,-14);front(34,21,16,0,20);portico(31,34,8,18);for(let i=0;i<8;i++)column(-15.5+i*31/7,1,26,18);for(let a=0;a<16;a++){let t=a*Math.PI/8;column(18*Math.sin(t),1,-14+18*Math.cos(t),16,.6)}}
  if(kind==='florence'){front(28,25,80);roof(29,80,0,26,0);front(62,25,22,0,-20);roof(24,62,0,26,-20,Math.PI/2);cyl(16,14,0,32,-20,'walls','stone',8);(()=>{const profile=[[17,0],[16.4,7],[14.7,14],[11.8,21],[7.8,27],[2.5,31]];for(let j=1;j<profile.length;j++){const [a,y]=profile[j-1],[b,yy]=profile[j];cyl(a,yy-y,0,39+(yy+y)/2,-20,'roof','bronze',8,b)}for(let j=0;j<8;j++){const a=j*Math.PI/4;line(profile.map(([r,y])=>[r*Math.sin(a),39+y,-20+r*Math.cos(a)]),.35,'roof','edge',24)}})();cyl(3,8,0,74,-20,'spire');pinnacle(0,78,-20,7,'spire');for(const x of [-9,0,9]){arch(7,13,x,2,41,'facade',0,.35);rose(3,x,21,41.5)}pediment(29,13,0,26,40);front(12,57,12,25,28);for(let y=8;y<56;y+=9){box(13,.7,13,25,y,28,'detail','edge');for(const x of [22,28])window(2,5,x,y-6,34.1,'detail')}for(const y of [6,12,18,24])box(29,.28,81,0,y,0,'detail','bronze');mats.bronze.color.setHex(0xb56b42);palette.bronze=0xb56b42;}
