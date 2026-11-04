@@ -176,10 +176,16 @@ export function buildCathedral(kind='paris'){
    p=new T.Shape();const spring=Math.max(0,h-w/2);
    p.moveTo(-w/2,0);p.lineTo(w/2,0);p.lineTo(w/2,spring);
    p.absarc(0,spring,w/2,0,Math.PI,false);p.lineTo(-w/2,0);
-  }for(const q of p.getPoints(12)){if(q.y>0||Math.abs(q.x)===w/2)pts.push([q.x,q.y,0])}const g=new T.Group();const cr=new T.CatmullRomCurve3(pts.map(a=>new T.Vector3(...a)));const geom=new T.TubeGeometry(cr,32,th,4,false);put(geom,x,y,z,l,m,r)}
+  }for(const q of p.getPoints(12)){if(q.y>0||Math.abs(q.x)===w/2)pts.push([q.x,q.y,0])}const g=new T.Group();const cr=new T.CatmullRomCurve3(pts.map(a=>new T.Vector3(...a)));const geom=new T.TubeGeometry(cr,32,th,4,false);put(geom,x,y,z,l,m,r);
+  if(w>=6&&h>=10){for(const step of [1,2]){const ring=outline(w+step*.58,h+step*.38).getPoints(14).filter(q=>q.y>0||Math.abs(q.x)===(w+step*.58)/2);const moulding=new T.TubeGeometry(new T.CatmullRomCurve3(ring.map(q=>new T.Vector3(q.x,q.y,0))),36,Math.max(.07,th*.46),5,false);put(moulding,x,y,z+step*.18,l,m,r);}}
+ }
  // Wall panels have real openings, rather than photographed windows.
  function panel(w,h,d,x,y,z,holes=[],l='walls',r=0){const s=new T.Shape();s.moveTo(-w/2,0);s.lineTo(w/2,0);s.lineTo(w/2,h);s.lineTo(-w/2,h);s.closePath();for(const a of holes){let p;if(a.circle){p=new T.Path();p.absarc(a.x,a.y,a.circle,0,Math.PI*2,true)}else{p=outline(a.w,a.h,a.y);p.translate=undefined;const pts=p.getPoints(14).map(q=>new T.Vector2(q.x+a.x,q.y));p=new T.Path(pts)}s.holes.push(p)}const g=new T.ExtrudeGeometry(s,{depth:d,bevelEnabled:false,curveSegments:12});put(g,x,y,z,l,'stone',r)}
- function window(w,h,x,y,z,l='walls',r=0,fw=w+2,glazed=true){panel(fw,h+2,.9,x,y-1,z,[{x:0,y:1,w,h}],l,r);arch(w,h,x,y,z,'detail',r,.16);const s=outline(w*.92,h*.95);if(glazed)put(new T.ShapeGeometry(s,8),x,y,z+.1,l,'glass',r);const dx=Math.cos(r)*w/4,dz=-Math.sin(r)*w/4;for(const sg of [-1,1])beam([x+sg*dx,y,z+sg*dz],[x+sg*dx,y+h*.65,z+sg*dz],.11,'detail');}
+ function window(w,h,x,y,z,l='walls',r=0,fw=w+2,glazed=true){panel(fw,h+2,.9,x,y-1,z,[{x:0,y:1,w,h}],l,r);arch(w,h,x,y,z,'detail',r,.16);const s=outline(w*.92,h*.95);if(glazed)put(new T.ShapeGeometry(s,8),x+Math.sin(r)*.1,y,z+Math.cos(r)*.1,l,'glass',r);
+ const local=(u,v,n=.21)=>[x+u*Math.cos(r)+n*Math.sin(r),y+v,z-u*Math.sin(r)+n*Math.cos(r)];
+ beam(local(-w*.55,-.2),local(w*.55,-.2),.15,'detail','edge');
+ if(w>=3&&h>=6){for(const side of [-1,1]){line([local(side*w*.25,h*.65),local(side*w*.21,h*.79),local(0,h*.86)],.075,'detail','edge',12);}const tracery=new T.TorusGeometry(w*.13,.065,5,16);tracery.rotateY(r);put(tracery,...local(0,h*.83),'detail','edge');}
+ const dx=Math.cos(r)*w/4,dz=-Math.sin(r)*w/4;for(const sg of [-1,1])beam([x+sg*dx,y,z+sg*dz],[x+sg*dx,y+h*.65,z+sg*dz],.11,'detail');}
  function rose(radius,x,y,z,r=0){const g=new T.TorusGeometry(radius,.22,5,64);g.rotateY(r);put(g,x,y,z,'detail');const inner=new T.TorusGeometry(radius*.25,.17,4,32);inner.rotateY(r);put(inner,x,y,z,'detail');for(let i=0;i<24;i++){let a=i*Math.PI/12;const c=Math.cos(a),s=Math.sin(a),local=(u,v)=>[x+u*Math.cos(r),y+v,z-u*Math.sin(r)];beam(local(radius*.25*c,radius*.25*s),local(radius*.94*c,radius*.94*s),.105);if(i%2===0){const gg=new T.TorusGeometry(radius*.165,.09,4,12);gg.translate(radius*.72*c,radius*.72*s,0);gg.rotateY(r);put(gg,x,y,z,'detail')}}const disk=new T.CircleGeometry(radius*.97,48);disk.rotateY(r);put(disk,x,y,z-.08,'walls','glass');}
  function pinnacle(x,y,z,h=4,l='detail'){box(.8,h*.24,.8,x,y+h*.12,z,l,'edge');cyl(.6,h*.76,x,y+h*.62,z,l,'edge',4,0);for(let a=1;a<4;a++){const yy=y+h*.3+a*h*.14;for(const sg of [-1,1])box(.35,.25,.35,x+sg*.3,yy,z,l)}}
  function statue(x,y,z,h=1.4){

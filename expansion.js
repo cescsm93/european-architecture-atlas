@@ -79,6 +79,9 @@ export function buildExpansion(kind, api) {
    const ht=i===0||i===3?67:79;const g=new T.LatheGeometry([[3.4,0],[3.7,25],[2.7,ht*.72],[.7,ht]].map(p=>new T.Vector2(...p)),16);put(g,x,0,z,'towers');
    for(let y=28;y<ht-3;y+=5)for(let j=0;j<8;j++){const a=j*Math.PI/4;cyl(.5,2.5,x+2.8*Math.sin(a),y,z+2.8*Math.cos(a),'detail','glass',6);}
    sphere(2,x,ht,z,'bronze');
+   // Tapered vertical ribs and crown collars catch the grazing exhibition light.
+   for(let j=0;j<12;j++){const a=j*Math.PI/6;line([[x+3.75*Math.sin(a),20,z+3.75*Math.cos(a)],[x+3.2*Math.sin(a),ht*.56,z+3.2*Math.cos(a)],[x+1.8*Math.sin(a),ht*.85,z+1.8*Math.cos(a)],[x+.7*Math.sin(a),ht,z+.7*Math.cos(a)]],.12,'towers','edge',20);}
+   for(const y of [ht-3,ht-1]){const ring=new T.TorusGeometry(1.1,.18,6,18);ring.rotateX(Math.PI/2);put(ring,x,y,z,'towers','bronze');}
   }
   for(const [x,z,ht]of [[0,0,110],[-10,0,87],[10,0,87],[0,12,87],[0,-12,87]]){cyl(5,ht-35,x,(ht+35)/2,z,'spire','stone',8,1);beam([x-3,ht,z],[x+3,ht,z],.6,'spire');beam([x,ht-3,z],[x,ht+5,z],.6,'spire');}
   for(const x of [-10,10])for(let z=-24;z<=24;z+=12){cyl(.8,20,x,10,z,'interior');for(const sg of [-1,1])beam([x,20,z],[x+sg*4,32,z+sg*3],.55,'interior');}
@@ -170,7 +173,10 @@ export function buildExpansion(kind, api) {
   box(39,.7,33,0,7,0,'walls');box(39,1.3,33,0,8,0,'walls');box(39,2.6,33,0,12,0,'walls');
   for(const z of [-16.2,16.2])box(38,2,.2,0,10,z,'walls','glass');for(const x of [-19.2,19.2])box(.2,2,32,x,10,0,'walls','glass');
   box(40,.6,34,0,13.6,0,'roof');box(21,5,15,0,2.5,-3,'walls','glass');
-  const pts=[];for(let j=0;j<=24;j++){const a=j*Math.PI/24;pts.push([12*Math.cos(a),17,8*Math.sin(a)-3]);}line(pts,1.6,'roof','stone',32);
+  // A thin, curved solarium wall rather than a round pipe at roof level.
+  for(let j=0;j<32;j++){const a=j*Math.PI/32,b=(j+1)*Math.PI/32;face([[12*Math.cos(a),13.9,8*Math.sin(a)-3],[12*Math.cos(b),13.9,8*Math.sin(b)-3],[12*Math.cos(b),18,8*Math.sin(b)-3],[12*Math.cos(a),18,8*Math.sin(a)-3]],'roof');face([[11.6*Math.cos(b),13.9,7.6*Math.sin(b)-3],[11.6*Math.cos(a),13.9,7.6*Math.sin(a)-3],[11.6*Math.cos(a),18,7.6*Math.sin(a)-3],[11.6*Math.cos(b),18,7.6*Math.sin(b)-3]],'roof');face([[12*Math.cos(a),18,8*Math.sin(a)-3],[12*Math.cos(b),18,8*Math.sin(b)-3],[11.6*Math.cos(b),18,7.6*Math.sin(b)-3],[11.6*Math.cos(a),18,7.6*Math.sin(a)-3]],'roof');}
+  for(const z of [-16.4,16.4]){for(let x=-18;x<=18;x+=3)box(.09,2,.12,x,10,z,'detail','edge');for(const y of [9,11])box(38,.1,.16,0,y,z,'detail','edge');}
+  for(const x of [-19.4,19.4]){for(let z=-15;z<=15;z+=3)box(.12,2,.09,x,10,z,'detail','edge');for(const y of [9,11])box(.16,.1,32,x,y,0,'detail','edge');}
   for(const sg of [-1,1])beam([sg*2,0,12],[sg*2,13, -9],.3,'interior');face([[-2,0,12],[2,0,12],[2,13,-9],[-2,13,-9]],'interior');points=[[-17,4,14],[0,17,6]];break;
  }
  case 'ronchamp':{
