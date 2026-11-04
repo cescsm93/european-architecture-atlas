@@ -5,7 +5,7 @@ const countries=__COUNTRIES__;
 export function createAtlasMap({entries,onSelect}){
  const host=document.querySelector('#atlas-map'),ns='http://www.w3.org/2000/svg';
  const el=(name,attrs={},parent)=>{const e=document.createElementNS(ns,name);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);parent?.append(e);return e};
- const svg=el('svg',{'aria-label':'欧洲与北美建筑地图：拖动移动，使用加减按钮缩放',role:'group',viewBox:'0 0 800 420'},host);
+ const svg=el('svg',{'aria-label':'全球建筑地图：拖动移动，使用加减按钮缩放',role:'group',viewBox:'0 0 800 420'},host);
  const defs=el('defs',{},svg),filter=el('filter',{id:'map-tone'},defs);el('feColorMatrix',{type:'saturate',values:'.42'},filter);
  const world=el('g',{},svg);
  el('image',{href:satellite,x:-180,y:-90,width:360,height:180,filter:'url(#map-tone)'},world);
@@ -17,7 +17,7 @@ export function createAtlasMap({entries,onSelect}){
   el('path',{d,'vector-effect':'non-scaling-stroke'},paths);
  }
  const labels=el('g',{'text-anchor':'middle','class':'country-labels'},svg),dots=el('g',{},svg);
- const labelData=[[-106,56,'加拿大','CANADA'],[-102,38,'美国','UNITED STATES'],[-102,24,'墨西哥','MEXICO'],[-3,40,'西班牙','SPAIN'],[2,46.5,'法国','FRANCE'],[10.4,51,'德国','GERMANY'],[13,42.3,'意大利','ITALY'],[-3,55,'英国','UNITED KINGDOM'],[-8,39.6,'葡萄牙','PORTUGAL'],[7.5,62,'挪威','NORWAY'],[16,62,'瑞典','SWEDEN'],[26,64,'芬兰','FINLAND'],[-19,65,'冰岛','ICELAND'],[24,39,'希腊','GREECE'],[19,52,'波兰','POLAND'],[15,47.3,'奥地利','AUSTRIA'],[15.6,49.7,'捷克','CZECHIA'],[8,46.6,'瑞士','SWITZERLAND'],[5,53,'荷兰','NETHERLANDS'],[20,47,'匈牙利','HUNGARY'],[25,45.5,'罗马尼亚','ROMANIA'],[10,56.7,'丹麦','DENMARK'],[-8,53,'爱尔兰','IRELAND'],[4.3,50.1,'比利时','BELGIUM']];
+ const labelData=[[103, 35, "中国", "CHINA"], [139, 37, "日本", "JAPAN"], [127, 36, "韩国", "SOUTH KOREA"], [80, 22, "印度", "INDIA"], [53, 33, "伊朗", "IRAN"], [54, 23, "阿联酋", "UAE"], [101, 16, "泰国", "THAILAND"], [96, 21, "缅甸", "MYANMAR"], [105, 12, "柬埔寨", "CAMBODIA"], [102, 5, "马来西亚", "MALAYSIA"], [116, -4, "印度尼西亚", "INDONESIA"], [133, -25, "澳大利亚", "AUSTRALIA"], [172, -40, "新西兰", "NEW ZEALAND"], [-53, -12, "巴西", "BRAZIL"], [-65, -37, "阿根廷", "ARGENTINA"], [-71, -30, "智利", "CHILE"], [-58, -33, "乌拉圭", "URUGUAY"], [-74, 5, "哥伦比亚", "COLOMBIA"], [-78, -2, "厄瓜多尔", "ECUADOR"], [-75, -10, "秘鲁", "PERU"], [30, 27, "埃及", "EGYPT"], [-5, 33, "摩洛哥", "MOROCCO"], [-4, 18, "马里", "MALI"], [24, -30, "南非", "SOUTH AFRICA"], [-90, 16, "危地马拉", "GUATEMALA"],[-106,56,'加拿大','CANADA'],[-102,38,'美国','UNITED STATES'],[-102,24,'墨西哥','MEXICO'],[-3,40,'西班牙','SPAIN'],[2,46.5,'法国','FRANCE'],[10.4,51,'德国','GERMANY'],[13,42.3,'意大利','ITALY'],[-3,55,'英国','UNITED KINGDOM'],[-8,39.6,'葡萄牙','PORTUGAL'],[7.5,62,'挪威','NORWAY'],[16,62,'瑞典','SWEDEN'],[26,64,'芬兰','FINLAND'],[-19,65,'冰岛','ICELAND'],[24,39,'希腊','GREECE'],[19,52,'波兰','POLAND'],[15,47.3,'奥地利','AUSTRIA'],[15.6,49.7,'捷克','CZECHIA'],[8,46.6,'瑞士','SWITZERLAND'],[5,53,'荷兰','NETHERLANDS'],[20,47,'匈牙利','HUNGARY'],[25,45.5,'罗马尼亚','ROMANIA'],[10,56.7,'丹麦','DENMARK'],[-8,53,'爱尔兰','IRELAND'],[4.3,50.1,'比利时','BELGIUM']];
  let region='all',visible=entries,selected='paris',cx=8,cy=-51,scale=10,dragged=false,gesture=null;
  const pointers=new Map();
  const popup=document.querySelector('#map-picks');
@@ -32,10 +32,10 @@ export function createAtlasMap({entries,onSelect}){
  function project(lat,lon,w,h){return [(lon-cx)*scale+w/2,(-lat-cy)*scale+h/2]}
  function draw(){
   const {w,h}=dimensions();svg.setAttribute('viewBox',`0 0 ${w} ${h}`);
-  cx=Math.max(-165,Math.min(60,cx));cy=Math.max(-80,Math.min(5,cy));
+  cx=Math.max(-180,Math.min(180,cx));cy=Math.max(-85,Math.min(85,cy));
   world.setAttribute('transform',`translate(${w/2-cx*scale} ${h/2-cy*scale}) scale(${scale})`);
-  labels.replaceChildren();
-  for(const [lon,lat,cn,en] of labelData){const [x,y]=project(lat,lon,w,h);if(x<0||x>w||y<0||y>h)continue;const t=el('text',{x,y},labels);el('tspan',{x,dy:0},t).textContent=cn;el('tspan',{x,dy:12,'class':'country-en'},t).textContent=en}
+  labels.replaceChildren();const occupied=[];
+  for(const [lon,lat,cn,en] of labelData){const [x,y]=project(lat,lon,w,h);if(x<0||x>w||y<0||y>h||occupied.some(p=>Math.abs(p[0]-x)<58&&Math.abs(p[1]-y)<26))continue;occupied.push([x,y]);const t=el('text',{x,y},labels);el('tspan',{x,dy:0},t).textContent=cn;el('tspan',{x,dy:12,'class':'country-en'},t).textContent=en}
   dots.replaceChildren();const groups=[];
   for(const e of visible){const [lat,lon]=locations[e.id];const [x,y]=project(lat,lon,w,h);if(x<-20||y<-20||x>w+20||y>h+20)continue;const near=groups.find(g=>Math.hypot(g.x-x,g.y-y)<25);if(near)near.entries.push(e);else groups.push({x,y,entries:[e]})}
   for(const g of groups){const active=g.entries.some(e=>e.id===selected);const a=el('g',{transform:`translate(${g.x} ${g.y})`,tabindex:0,role:'button','aria-label':g.entries.map(e=>e.name).join('、'),'class':'map-marker'+(active?' selected':'')},dots);
@@ -47,7 +47,7 @@ export function createAtlasMap({entries,onSelect}){
   document.querySelector('#map-empty').hidden=!!visible.length;
  }
  function zoom(f,x,y){const {w,h}=dimensions();x??=w/2;y??=h/2;const next=Math.max(Math.min(w/370,h/180),Math.min(1800,scale*f));cx+=(x-w/2)*(1/scale-1/next);cy+=(y-h/2)*(1/scale-1/next);scale=next;close();draw()}
- function reset(){const {w,h}=dimensions();const v=region==='europe'?[6,-51,59,34]:region==='northamerica'?[-101,-40,68,43]:[-46,-45,185,61];[cx,cy]=v;scale=Math.min(w/v[2],h/v[3]);close();draw()}
+ function reset(){const {w,h}=dimensions();const views={europe:[6,-51,59,34],northamerica:[-98,-40,78,52],southamerica:[-62,18,58,70],asia:[100,-27,112,70],africa:[20,-2,92,83],oceania:[145,27,79,55],all:[0,-9,370,165]};const v=views[region]||views.all;[cx,cy]=v;scale=Math.min(w/v[2],h/v[3]);close();draw()}
  document.querySelector('#map-plus').onclick=()=>zoom(1.7);document.querySelector('#map-minus').onclick=()=>zoom(1/1.7);document.querySelector('#map-reset').onclick=reset;
  function point(e){const r=svg.getBoundingClientRect();return {x:e.clientX-r.left,y:e.clientY-r.top}}
  function baseline(){const p=[...pointers.values()];gesture=p.length>1?{cx,cy,scale,x:(p[0].x+p[1].x)/2,y:(p[0].y+p[1].y)/2,d:Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y)}:p.length?{cx,cy,scale,x:p[0].x,y:p[0].y}:null}

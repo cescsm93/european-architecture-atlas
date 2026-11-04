@@ -1694,5 +1694,1845 @@
         "text": "四个方向的陡直阶梯连接地面与顶层平台。"
       }
     ]
+  },
+  {
+    "id": "flatiron",
+    "cn": "熨斗大厦",
+    "en": "Flatiron Building",
+    "location": "美国 · 纽约",
+    "use": "办公建筑",
+    "style": "布杂艺术",
+    "date": "1902 年建成",
+    "source": "https://s-media.nyc.gov/agencies/lpc/lp/0219.pdf",
+    "region": "northamerica",
+    "family": "world_flatiron",
+    "params": [],
+    "topics": [
+      {
+        "title": "楔形平面",
+        "text": "狭长街角地块塑造三角形塔体，圆钝尖角面向街口。"
+      },
+      {
+        "title": "古典分层",
+        "text": "底层、重复窗层和顶部檐口形成清晰分层。"
+      }
+    ]
+  },
+  {
+    "id": "rockefeller",
+    "cn": "洛克菲勒中心 30 号楼",
+    "en": "30 Rockefeller Plaza",
+    "location": "美国 · 纽约",
+    "use": "办公建筑",
+    "style": "装饰艺术",
+    "date": "1933 年开放",
+    "source": "https://www.rockefellercenter.com/history/",
+    "region": "northamerica",
+    "family": "world_rockefeller",
+    "params": [],
+    "topics": [
+      {
+        "title": "细长退台",
+        "text": "板状高层通过多级退台构成天际线。"
+      },
+      {
+        "title": "广场与塔体",
+        "text": "前方广场和低翼衬托高层主体。"
+      }
+    ]
+  },
+  {
+    "id": "willis",
+    "cn": "威利斯大厦",
+    "en": "Willis Tower",
+    "location": "美国 · 芝加哥",
+    "use": "办公建筑",
+    "style": "现代主义",
+    "date": "1973 年建成",
+    "source": "https://www.willistower.com/",
+    "region": "northamerica",
+    "family": "world_willis",
+    "params": [],
+    "topics": [
+      {
+        "title": "束筒结构",
+        "text": "九个方筒以不同高度结束，逐级收束。"
+      },
+      {
+        "title": "双天线",
+        "text": "黑色塔身上方的两根天线强调竖向线条。"
+      }
+    ]
+  },
+  {
+    "id": "hancock",
+    "cn": "约翰·汉考克中心",
+    "en": "John Hancock Center",
+    "location": "美国 · 芝加哥",
+    "use": "办公建筑",
+    "style": "现代主义",
+    "date": "1969 年建成",
+    "source": "https://www.som.com/projects/875-north-michigan-avenue-formerly-john-hancock-center/",
+    "region": "northamerica",
+    "family": "world_hancock",
+    "params": [],
+    "topics": [
+      {
+        "title": "交叉支撑",
+        "text": "立面巨大的 X 形斜撑表达外部结构。"
+      },
+      {
+        "title": "收分塔身",
+        "text": "向上变窄的塔体结束为双天线。"
+      }
+    ]
+  },
+  {
+    "id": "gatewayarch",
+    "cn": "圣路易斯大拱门",
+    "en": "Gateway Arch",
+    "location": "美国 · 圣路易斯",
+    "use": "纪念建筑",
+    "style": "现代主义",
+    "date": "1965 年拱体完成",
+    "source": "https://www.nps.gov/jeff/index.htm",
+    "region": "northamerica",
+    "family": "world_gatewayarch",
+    "params": [],
+    "topics": [
+      {
+        "title": "倒悬链线",
+        "text": "高耸曲线由两侧基部向顶部连续收拢。"
+      },
+      {
+        "title": "三角截面",
+        "text": "三角形截面组织不锈钢表皮与内部空间。"
+      }
+    ]
+  },
+  {
+    "id": "salk",
+    "cn": "索尔克研究所",
+    "en": "Salk Institute",
+    "location": "美国 · 拉霍亚",
+    "use": "科研建筑",
+    "style": "现代主义",
+    "date": "1965 年建成",
+    "source": "https://www.salk.edu/about/visiting-salk/",
+    "region": "northamerica",
+    "family": "world_salk",
+    "params": [],
+    "topics": [
+      {
+        "title": "对称庭院",
+        "text": "两侧实验楼沿中轴水渠展开。"
+      },
+      {
+        "title": "混凝土与木窗",
+        "text": "混凝土体量与嵌入式木窗形成对比。"
+      }
+    ]
+  },
+  {
+    "id": "getty",
+    "cn": "盖蒂中心",
+    "en": "Getty Center",
+    "location": "美国 · 洛杉矶",
+    "use": "博物馆",
+    "style": "当代",
+    "date": "1997 年开放",
+    "source": "https://www.getty.edu/visit/center/",
+    "region": "northamerica",
+    "family": "world_getty",
+    "params": [],
+    "topics": [
+      {
+        "title": "山地馆群",
+        "text": "方形与弧形体量围绕庭院组合。"
+      },
+      {
+        "title": "浅色石材",
+        "text": "浅色饰面和水平檐带统一馆群。"
+      }
+    ]
+  },
+  {
+    "id": "gallerycanada",
+    "cn": "加拿大国家美术馆",
+    "en": "National Gallery of Canada",
+    "location": "加拿大 · 渥太华",
+    "use": "博物馆",
+    "style": "当代",
+    "date": "1988 年现馆开放",
+    "source": "https://www.safdiearchitects.com/projects/national-gallery-of-canada",
+    "region": "northamerica",
+    "family": "world_gallerycanada",
+    "params": [],
+    "topics": [
+      {
+        "title": "玻璃大厅",
+        "text": "高大的多面玻璃厅组织入口与公共空间。"
+      },
+      {
+        "title": "石材展厅",
+        "text": "石材馆体与透明大厅形成虚实对比。"
+      }
+    ]
+  },
+  {
+    "id": "ubcmuseum",
+    "cn": "不列颠哥伦比亚大学人类学博物馆",
+    "en": "UBC Museum of Anthropology",
+    "location": "加拿大 · 温哥华",
+    "use": "博物馆",
+    "style": "现代主义",
+    "date": "1976 年主馆开放",
+    "source": "https://moa.ubc.ca/about/",
+    "region": "northamerica",
+    "family": "world_ubcmuseum",
+    "params": [],
+    "topics": [
+      {
+        "title": "柱梁大厅",
+        "text": "混凝土柱梁与高大玻璃界面表达公共大厅。"
+      },
+      {
+        "title": "层叠屋盖",
+        "text": "不同高度的平屋盖界定相邻展览空间。"
+      }
+    ]
+  },
+  {
+    "id": "tikal",
+    "cn": "蒂卡尔一号神庙",
+    "en": "Temple I · Tikal",
+    "location": "危地马拉 · 蒂卡尔",
+    "use": "神庙",
+    "style": "玛雅建筑",
+    "date": "公元 8 世纪主要营建阶段",
+    "source": "https://whc.unesco.org/en/list/64/",
+    "region": "northamerica",
+    "family": "world_tikal",
+    "params": [],
+    "topics": [
+      {
+        "title": "陡峭台基",
+        "text": "多级收分台基承托上部神庙。"
+      },
+      {
+        "title": "屋脊冠",
+        "text": "神庙顶部高耸屋脊冠延续竖向轮廓。"
+      }
+    ]
+  },
+  {
+    "id": "giza",
+    "cn": "胡夫金字塔",
+    "en": "Great Pyramid of Giza",
+    "location": "埃及 · 吉萨",
+    "use": "陵墓",
+    "style": "古埃及建筑",
+    "date": "公元前 3 千纪建设",
+    "source": "https://whc.unesco.org/en/list/86/",
+    "region": "africa",
+    "family": "world_giza",
+    "params": [],
+    "topics": [
+      {
+        "title": "四面锥体",
+        "text": "斜面向中心顶点收拢，基底保持规整方形。"
+      },
+      {
+        "title": "石砌层次",
+        "text": "层层石构表达砌筑方式与尺度。"
+      }
+    ]
+  },
+  {
+    "id": "abusimbel",
+    "cn": "阿布辛贝大神庙",
+    "en": "Great Temple · Abu Simbel",
+    "location": "埃及 · 阿布辛贝",
+    "use": "宗教建筑",
+    "style": "古埃及建筑",
+    "date": "公元前 13 世纪主体，20 世纪迁建",
+    "source": "https://whc.unesco.org/en/list/88/",
+    "region": "africa",
+    "family": "world_abusimbel",
+    "params": [],
+    "topics": [
+      {
+        "title": "四尊坐像",
+        "text": "四尊巨像框定岩壁正面的中央入口。"
+      },
+      {
+        "title": "凿岩立面",
+        "text": "入口与岩体紧密结合。"
+      }
+    ]
+  },
+  {
+    "id": "djenne",
+    "cn": "杰内大清真寺",
+    "en": "Great Mosque of Djenné",
+    "location": "马里 · 杰内",
+    "use": "宗教建筑",
+    "style": "苏丹萨赫勒建筑",
+    "date": "现存主体为 1907 年重建",
+    "source": "https://whc.unesco.org/en/list/116/",
+    "region": "africa",
+    "family": "world_djenne",
+    "params": [],
+    "topics": [
+      {
+        "title": "泥土塔墙",
+        "text": "土墙、扶壁与三座塔体形成节奏。"
+      },
+      {
+        "title": "外露木杆",
+        "text": "木杆参与维护并形成表面纹理。"
+      }
+    ]
+  },
+  {
+    "id": "hassan2",
+    "cn": "哈桑二世清真寺",
+    "en": "Hassan II Mosque",
+    "location": "摩洛哥 · 卡萨布兰卡",
+    "use": "宗教建筑",
+    "style": "伊斯兰建筑",
+    "date": "1993 年落成",
+    "source": "https://www.fmh2.ma/",
+    "region": "africa",
+    "family": "world_hassan2",
+    "params": [],
+    "topics": [
+      {
+        "title": "高宣礼塔",
+        "text": "细长方塔从沿海大体量中升起。"
+      },
+      {
+        "title": "大殿与庭院",
+        "text": "礼拜厅与开敞广场形成宽阔前景。"
+      }
+    ]
+  },
+  {
+    "id": "zeitz",
+    "cn": "蔡茨非洲当代艺术博物馆",
+    "en": "Zeitz MOCAA",
+    "location": "南非 · 开普敦",
+    "use": "博物馆",
+    "style": "当代",
+    "date": "2017 年开放",
+    "source": "https://heatherwick.com/project/zeitz-mocaa/",
+    "region": "africa",
+    "family": "world_zeitz",
+    "params": [],
+    "topics": [
+      {
+        "title": "筒仓改造",
+        "text": "成组圆筒保留原工业建筑轮廓。"
+      },
+      {
+        "title": "切面玻璃",
+        "text": "多面玻璃开口标记改造后的空间。"
+      }
+    ]
+  },
+  {
+    "id": "sydneyopera",
+    "cn": "悉尼歌剧院",
+    "en": "Sydney Opera House",
+    "location": "澳大利亚 · 悉尼",
+    "use": "剧院",
+    "style": "现代主义",
+    "date": "1973 年开放",
+    "source": "https://whc.unesco.org/en/list/166/",
+    "region": "oceania",
+    "family": "world_sydneyopera",
+    "params": [],
+    "topics": [
+      {
+        "title": "白色壳体",
+        "text": "成组曲面壳体形成帆状天际线。"
+      },
+      {
+        "title": "港湾台地",
+        "text": "台阶连接水岸与表演厅入口。"
+      }
+    ]
+  },
+  {
+    "id": "harbourbridge",
+    "cn": "悉尼海港大桥",
+    "en": "Sydney Harbour Bridge",
+    "location": "澳大利亚 · 悉尼",
+    "use": "桥梁",
+    "style": "工业建筑",
+    "date": "1932 年通车",
+    "source": "https://www.dcceew.gov.au/parks-heritage/heritage/places/national/sydney-harbour-bridge",
+    "region": "oceania",
+    "family": "world_harbourbridge",
+    "params": [],
+    "topics": [
+      {
+        "title": "钢拱主跨",
+        "text": "两侧拱肋跨越港湾，竖杆连接桥面。"
+      },
+      {
+        "title": "桥头塔楼",
+        "text": "四座石塔标记主跨两端。"
+      }
+    ]
+  },
+  {
+    "id": "royalexhibition",
+    "cn": "墨尔本皇家展览馆",
+    "en": "Royal Exhibition Building",
+    "location": "澳大利亚 · 墨尔本",
+    "use": "展览馆",
+    "style": "历史主义",
+    "date": "1880 年开放",
+    "source": "https://whc.unesco.org/en/list/1131/",
+    "region": "oceania",
+    "family": "world_royalexhibition",
+    "params": [],
+    "topics": [
+      {
+        "title": "中央穹顶",
+        "text": "高穹顶位于两条展厅轴线交会处。"
+      },
+      {
+        "title": "长展厅翼",
+        "text": "连续拱窗沿水平展厅展开。"
+      }
+    ]
+  },
+  {
+    "id": "canberraparliament",
+    "cn": "澳大利亚国会大厦",
+    "en": "Parliament House · Canberra",
+    "location": "澳大利亚 · 堪培拉",
+    "use": "议会建筑",
+    "style": "当代",
+    "date": "1988 年开放",
+    "source": "https://peo.gov.au/understand-our-parliament/parliament-house/australias-parliament-house",
+    "region": "oceania",
+    "family": "world_canberraparliament",
+    "params": [],
+    "topics": [
+      {
+        "title": "草坡屋顶",
+        "text": "缓缓升起的地形连接建筑与场地。"
+      },
+      {
+        "title": "四足旗杆",
+        "text": "倾斜支撑托起高处旗杆。"
+      }
+    ]
+  },
+  {
+    "id": "beehive",
+    "cn": "新西兰蜂巢大厦",
+    "en": "Beehive",
+    "location": "新西兰 · 惠灵顿",
+    "use": "议会建筑",
+    "style": "现代主义",
+    "date": "20 世纪 70 年代起分期启用",
+    "source": "https://www3.parliament.nz/en/visit-and-learn/history-and-buildings/buildings-and-grounds/the-beehive-executive-wing/",
+    "region": "oceania",
+    "family": "world_beehive",
+    "params": [],
+    "topics": [
+      {
+        "title": "环形分层",
+        "text": "层层圆形楼板向上收分。"
+      },
+      {
+        "title": "顶部屋盖",
+        "text": "深色圆锥屋盖结束顶部体量。"
+      }
+    ]
+  },
+  {
+    "id": "taihe",
+    "cn": "故宫太和殿",
+    "en": "Hall of Supreme Harmony",
+    "location": "中国 · 北京",
+    "use": "宫殿",
+    "style": "中国古典建筑",
+    "date": "现存主体为清代重建",
+    "source": "https://whc.unesco.org/en/list/439/",
+    "region": "asia",
+    "family": "world_taihe",
+    "params": [],
+    "topics": [
+      {
+        "title": "重檐庑殿顶",
+        "text": "两层屋檐与中央屋脊构成重要宫殿的轮廓。"
+      },
+      {
+        "title": "三层台基",
+        "text": "层层石台抬高主体并组织中轴入口。"
+      }
+    ]
+  },
+  {
+    "id": "templeheaven",
+    "cn": "天坛祈年殿",
+    "en": "Hall of Prayer for Good Harvests",
+    "location": "中国 · 北京",
+    "use": "宗教建筑",
+    "style": "中国古典建筑",
+    "date": "现存主体为清代重建",
+    "source": "https://whc.unesco.org/en/list/881/",
+    "region": "asia",
+    "family": "world_templeheaven",
+    "params": [],
+    "topics": [
+      {
+        "title": "三重圆顶",
+        "text": "三层蓝色圆形屋檐向上逐层收束。"
+      },
+      {
+        "title": "环形台基",
+        "text": "三层石台与阶梯强调中心轴线。"
+      }
+    ]
+  },
+  {
+    "id": "potala",
+    "cn": "布达拉宫",
+    "en": "Potala Palace",
+    "location": "中国 · 拉萨",
+    "use": "宫殿",
+    "style": "藏式建筑",
+    "date": "17 世纪主体，含早期与后续阶段",
+    "source": "https://whc.unesco.org/en/list/707/",
+    "region": "asia",
+    "family": "world_potala",
+    "params": [],
+    "topics": [
+      {
+        "title": "依山层叠",
+        "text": "白宫与红宫随山势层层升高。"
+      },
+      {
+        "title": "红白体量",
+        "text": "红白墙体与金色屋顶标记空间层级。"
+      }
+    ]
+  },
+  {
+    "id": "wildgoose",
+    "cn": "大雁塔",
+    "en": "Giant Wild Goose Pagoda",
+    "location": "中国 · 西安",
+    "use": "宗教建筑",
+    "style": "中国古典建筑",
+    "date": "唐代始建，历经重建修缮",
+    "source": "https://whc.unesco.org/en/list/1442/",
+    "region": "asia",
+    "family": "world_wildgoose",
+    "params": [],
+    "topics": [
+      {
+        "title": "七层砖塔",
+        "text": "方形塔身逐层收分，檐口勾勒水平层次。"
+      },
+      {
+        "title": "券形门洞",
+        "text": "各层中央开口与厚重墙体形成对比。"
+      }
+    ]
+  },
+  {
+    "id": "shanghaitower",
+    "cn": "上海中心大厦",
+    "en": "Shanghai Tower",
+    "location": "中国 · 上海",
+    "use": "办公建筑",
+    "style": "当代",
+    "date": "2010 年代建成开放",
+    "source": "https://www.gensler.com/projects/shanghai-tower",
+    "region": "asia",
+    "family": "world_shanghaitower",
+    "params": [],
+    "topics": [
+      {
+        "title": "扭转塔体",
+        "text": "曲线平面随高度旋转，形成上升轮廓。"
+      },
+      {
+        "title": "双层表皮",
+        "text": "分层玻璃和竖向结构示意外部围护。"
+      }
+    ]
+  },
+  {
+    "id": "cctv",
+    "cn": "中央电视台总部大楼",
+    "en": "CCTV Headquarters",
+    "location": "中国 · 北京",
+    "use": "办公建筑",
+    "style": "当代",
+    "date": "2012 年完成",
+    "source": "https://www.oma.com/projects/cctv-headquarters",
+    "region": "asia",
+    "family": "world_cctv",
+    "params": [],
+    "topics": [
+      {
+        "title": "连续环体",
+        "text": "倾斜高塔通过顶部悬挑连接成空间环。"
+      },
+      {
+        "title": "斜向网格",
+        "text": "表面斜撑与几何体量共同表达结构。"
+      }
+    ]
+  },
+  {
+    "id": "birdnest",
+    "cn": "国家体育场·鸟巢",
+    "en": "Beijing National Stadium",
+    "location": "中国 · 北京",
+    "use": "体育场",
+    "style": "当代",
+    "date": "2008 年启用",
+    "source": "https://www.herzogdemeuron.com/projects/226-national-stadium/",
+    "region": "asia",
+    "family": "world_birdnest",
+    "params": [],
+    "topics": [
+      {
+        "title": "交织钢构",
+        "text": "交叉外部杆件围绕椭圆看台。"
+      },
+      {
+        "title": "开放屋顶",
+        "text": "顶部开口与层叠看台界定比赛空间。"
+      }
+    ]
+  },
+  {
+    "id": "orientalpearl",
+    "cn": "东方明珠广播电视塔",
+    "en": "Oriental Pearl Tower",
+    "location": "中国 · 上海",
+    "use": "观景塔",
+    "style": "当代",
+    "date": "1994 年建成",
+    "source": "https://www.orientalpearltower.com/",
+    "region": "asia",
+    "family": "world_orientalpearl",
+    "params": [],
+    "topics": [
+      {
+        "title": "球体组合",
+        "text": "大小球体沿竖向核心排列。"
+      },
+      {
+        "title": "斜撑基座",
+        "text": "倾斜支撑连接观景体量与地面。"
+      }
+    ]
+  },
+  {
+    "id": "bankchina",
+    "cn": "香港中银大厦",
+    "en": "Bank of China Tower",
+    "location": "中国 · 香港",
+    "use": "办公建筑",
+    "style": "现代主义",
+    "date": "1990 年启用",
+    "source": "https://www.pcf-p.com/projects/bank-of-china-tower/",
+    "region": "asia",
+    "family": "world_bankchina",
+    "params": [],
+    "topics": [
+      {
+        "title": "三角网格",
+        "text": "对角线将玻璃立面分成三角单元。"
+      },
+      {
+        "title": "错动塔冠",
+        "text": "不同高度的棱面体量逐步收束。"
+      }
+    ]
+  },
+  {
+    "id": "taipei101",
+    "cn": "台北 101",
+    "en": "Taipei 101",
+    "location": "中国 · 台北",
+    "use": "办公建筑",
+    "style": "当代",
+    "date": "2004 年开放",
+    "source": "https://www.taipei-101.com.tw/",
+    "region": "asia",
+    "family": "world_taipei101",
+    "params": [],
+    "topics": [
+      {
+        "title": "节节塔身",
+        "text": "重复外张单元形成竹节般的节奏。"
+      },
+      {
+        "title": "顶部尖塔",
+        "text": "细长塔冠延续上升趋势。"
+      }
+    ]
+  },
+  {
+    "id": "tulou",
+    "cn": "福建土楼·承启楼",
+    "en": "Chengqi Lou · Fujian Tulou",
+    "location": "中国 · 龙岩",
+    "use": "住宅",
+    "style": "中国传统民居",
+    "date": "17—18 世纪主要营建阶段",
+    "source": "https://whc.unesco.org/en/list/1113/",
+    "region": "asia",
+    "family": "world_tulou",
+    "params": [],
+    "topics": [
+      {
+        "title": "环形外楼",
+        "text": "厚重环形外墙包围多层居住单元。"
+      },
+      {
+        "title": "同心院落",
+        "text": "低环楼与中央院落形成同心层次。"
+      }
+    ]
+  },
+  {
+    "id": "suzhoumuseum",
+    "cn": "苏州博物馆新馆",
+    "en": "Suzhou Museum",
+    "location": "中国 · 苏州",
+    "use": "博物馆",
+    "style": "当代",
+    "date": "2006 年开放",
+    "source": "https://www.szmuseum.com/",
+    "region": "asia",
+    "family": "world_suzhoumuseum",
+    "params": [],
+    "topics": [
+      {
+        "title": "几何屋顶",
+        "text": "折线屋面与白墙延续江南建筑尺度。"
+      },
+      {
+        "title": "水庭",
+        "text": "庭院与水面通过步行空间连接。"
+      }
+    ]
+  },
+  {
+    "id": "guangzhouopera",
+    "cn": "广州大剧院",
+    "en": "Guangzhou Opera House",
+    "location": "中国 · 广州",
+    "use": "剧院",
+    "style": "当代",
+    "date": "2010 年开放",
+    "source": "https://www.zaha-hadid.com/architecture/guangzhou-opera-house/",
+    "region": "asia",
+    "family": "world_guangzhouopera",
+    "params": [],
+    "topics": [
+      {
+        "title": "双砾石体量",
+        "text": "两个不规则馆体像河岸砾石并置。"
+      },
+      {
+        "title": "三角表皮",
+        "text": "倾斜表面以三角网格组织围护。"
+      }
+    ]
+  },
+  {
+    "id": "taipeipalace",
+    "cn": "台北故宫博物院",
+    "en": "National Palace Museum",
+    "location": "中国 · 台北",
+    "use": "博物馆",
+    "style": "中国古典复兴",
+    "date": "1965 年现址开放",
+    "source": "https://www.npm.gov.tw/",
+    "region": "asia",
+    "family": "world_taipeipalace",
+    "params": [],
+    "topics": [
+      {
+        "title": "宫殿式屋顶",
+        "text": "中央高体与两侧长翼共同组织立面。"
+      },
+      {
+        "title": "轴线台阶",
+        "text": "台阶将广场引向中部门厅。"
+      }
+    ]
+  },
+  {
+    "id": "himeji",
+    "cn": "姬路城",
+    "en": "Himeji Castle",
+    "location": "日本 · 姬路",
+    "use": "城堡",
+    "style": "日本传统建筑",
+    "date": "17 世纪初主要营建阶段",
+    "source": "https://whc.unesco.org/en/list/661/",
+    "region": "asia",
+    "family": "world_himeji",
+    "params": [],
+    "topics": [
+      {
+        "title": "层叠天守",
+        "text": "白色塔体与多重屋檐逐层收束。"
+      },
+      {
+        "title": "石垣基座",
+        "text": "陡斜石台承托上层建筑。"
+      }
+    ]
+  },
+  {
+    "id": "kinkakuji",
+    "cn": "金阁寺",
+    "en": "Kinkaku-ji",
+    "location": "日本 · 京都",
+    "use": "宗教建筑",
+    "style": "日本传统建筑",
+    "date": "现存金阁为 1955 年重建",
+    "source": "https://whc.unesco.org/en/list/688/",
+    "region": "asia",
+    "family": "world_kinkakuji",
+    "params": [],
+    "topics": [
+      {
+        "title": "金色楼阁",
+        "text": "金色上层与较朴素底层形成对比。"
+      },
+      {
+        "title": "临水屋檐",
+        "text": "低缓屋面和水边平台构成庭园景观。"
+      }
+    ]
+  },
+  {
+    "id": "tokyotower",
+    "cn": "东京塔",
+    "en": "Tokyo Tower",
+    "location": "日本 · 东京",
+    "use": "观景塔",
+    "style": "现代主义",
+    "date": "1958 年开放",
+    "source": "https://www.tokyotower.co.jp/",
+    "region": "asia",
+    "family": "world_tokyotower",
+    "params": [],
+    "topics": [
+      {
+        "title": "格构塔身",
+        "text": "红白交替的钢构逐渐向上收拢。"
+      },
+      {
+        "title": "观景平台",
+        "text": "平台沿塔身形成水平节点。"
+      }
+    ]
+  },
+  {
+    "id": "skytree",
+    "cn": "东京晴空塔",
+    "en": "Tokyo Skytree",
+    "location": "日本 · 东京",
+    "use": "观景塔",
+    "style": "当代",
+    "date": "2012 年开放",
+    "source": "https://www.tokyo-skytree.jp/en/",
+    "region": "asia",
+    "family": "world_skytree",
+    "params": [],
+    "topics": [
+      {
+        "title": "网格塔体",
+        "text": "细密杆件围合高耸塔身。"
+      },
+      {
+        "title": "双观景层",
+        "text": "两处观景体量位于上部不同高度。"
+      }
+    ]
+  },
+  {
+    "id": "tokyometro",
+    "cn": "东京都厅舍",
+    "en": "Tokyo Metropolitan Government Building",
+    "location": "日本 · 东京",
+    "use": "市政建筑",
+    "style": "后现代主义",
+    "date": "1991 年建成",
+    "source": "https://www.yokoso.metro.tokyo.lg.jp/",
+    "region": "asia",
+    "family": "world_tokyometro",
+    "params": [],
+    "topics": [
+      {
+        "title": "分叉双塔",
+        "text": "主体在上部拆分为两座塔冠。"
+      },
+      {
+        "title": "中央广场",
+        "text": "办公楼群围绕公共空间展开。"
+      }
+    ]
+  },
+  {
+    "id": "hiroshima",
+    "cn": "广岛和平纪念资料馆",
+    "en": "Hiroshima Peace Memorial Museum",
+    "location": "日本 · 广岛",
+    "use": "博物馆",
+    "style": "现代主义",
+    "date": "1955 年开放",
+    "source": "https://hpmmuseum.jp/",
+    "region": "asia",
+    "family": "world_hiroshima",
+    "params": [],
+    "topics": [
+      {
+        "title": "架空长体",
+        "text": "水平馆体由细柱抬离地面。"
+      },
+      {
+        "title": "规整立面",
+        "text": "竖向构件和横向楼板组织表皮。"
+      }
+    ]
+  },
+  {
+    "id": "osakacastle",
+    "cn": "大阪城天守阁",
+    "en": "Osaka Castle Main Tower",
+    "location": "日本 · 大阪",
+    "use": "城堡",
+    "style": "日本传统复兴",
+    "date": "1931 年现存天守重建",
+    "source": "https://www.osakacastle.net/",
+    "region": "asia",
+    "family": "world_osakacastle",
+    "params": [],
+    "topics": [
+      {
+        "title": "重檐天守",
+        "text": "绿色屋檐在高塔外轮廓上逐级收束。"
+      },
+      {
+        "title": "石垣",
+        "text": "宽厚石台承托高处天守。"
+      }
+    ]
+  },
+  {
+    "id": "gyeongbok",
+    "cn": "景福宫勤政殿",
+    "en": "Geunjeongjeon · Gyeongbokgung",
+    "location": "韩国 · 首尔",
+    "use": "宫殿",
+    "style": "韩国传统建筑",
+    "date": "现存主体为 19 世纪重建",
+    "source": "https://royal.khs.go.kr/",
+    "region": "asia",
+    "family": "world_gyeongbok",
+    "params": [],
+    "topics": [
+      {
+        "title": "重檐正殿",
+        "text": "双层屋檐与红色柱列组织宫殿空间。"
+      },
+      {
+        "title": "石台与庭院",
+        "text": "高石台和庭院形成中轴序列。"
+      }
+    ]
+  },
+  {
+    "id": "lotte",
+    "cn": "乐天世界塔",
+    "en": "Lotte World Tower",
+    "location": "韩国 · 首尔",
+    "use": "办公建筑",
+    "style": "当代",
+    "date": "2017 年开放",
+    "source": "https://www.kpf.com/project/lotte-world-tower",
+    "region": "asia",
+    "family": "world_lotte",
+    "params": [],
+    "topics": [
+      {
+        "title": "渐收玻璃塔",
+        "text": "细长玻璃体量向顶部收拢。"
+      },
+      {
+        "title": "分缝塔冠",
+        "text": "顶部裂缝与弧形表皮形成天际线。"
+      }
+    ]
+  },
+  {
+    "id": "tajmahal",
+    "cn": "泰姬陵",
+    "en": "Taj Mahal",
+    "location": "印度 · 阿格拉",
+    "use": "陵墓",
+    "style": "莫卧儿建筑",
+    "date": "17 世纪主体建设",
+    "source": "https://whc.unesco.org/en/list/252/",
+    "region": "asia",
+    "family": "world_tajmahal",
+    "params": [],
+    "topics": [
+      {
+        "title": "洋葱穹顶",
+        "text": "高穹顶与四角小亭围绕主体布局。"
+      },
+      {
+        "title": "四座宣礼塔",
+        "text": "细塔标记平台四角。"
+      }
+    ]
+  },
+  {
+    "id": "hawamahal",
+    "cn": "风之宫",
+    "en": "Hawa Mahal",
+    "location": "印度 · 斋浦尔",
+    "use": "宫殿",
+    "style": "拉杰普特建筑",
+    "date": "1799 年建成",
+    "source": "https://www.tourism.rajasthan.gov.in/content/rajasthan-tourism/en/tourist-destinations/hawa-mahal.html",
+    "region": "asia",
+    "family": "world_hawamahal",
+    "params": [],
+    "topics": [
+      {
+        "title": "蜂窝窗龛",
+        "text": "密集小窗与凸出窗龛组成粉色立面。"
+      },
+      {
+        "title": "层叠塔冠",
+        "text": "上部逐层收窄，延续竖向节奏。"
+      }
+    ]
+  },
+  {
+    "id": "lotustemple",
+    "cn": "莲花寺",
+    "en": "Lotus Temple",
+    "location": "印度 · 新德里",
+    "use": "宗教建筑",
+    "style": "当代",
+    "date": "1986 年开放",
+    "source": "https://bahaihouseofworship.in/architecture/",
+    "region": "asia",
+    "family": "world_lotustemple",
+    "params": [],
+    "topics": [
+      {
+        "title": "花瓣屋盖",
+        "text": "白色花瓣围合中央礼拜空间。"
+      },
+      {
+        "title": "环绕水池",
+        "text": "周边水池强化花瓣轮廓。"
+      }
+    ]
+  },
+  {
+    "id": "sanchi",
+    "cn": "桑奇大佛塔",
+    "en": "Great Stupa · Sanchi",
+    "location": "印度 · 桑奇",
+    "use": "宗教建筑",
+    "style": "古印度建筑",
+    "date": "公元前 3 世纪起分期营建",
+    "source": "https://whc.unesco.org/en/list/524/",
+    "region": "asia",
+    "family": "world_sanchi",
+    "params": [],
+    "topics": [
+      {
+        "title": "半球塔体",
+        "text": "半球主体承托顶部方形围栏与伞盖。"
+      },
+      {
+        "title": "石门与回廊",
+        "text": "石门标记环绕礼拜路径入口。"
+      }
+    ]
+  },
+  {
+    "id": "victoriamemorial",
+    "cn": "维多利亚纪念堂",
+    "en": "Victoria Memorial",
+    "location": "印度 · 加尔各答",
+    "use": "博物馆",
+    "style": "印度撒拉逊复兴",
+    "date": "1921 年开放",
+    "source": "https://www.museumsofindia.gov.in/repository/museum/vmh_kol",
+    "region": "asia",
+    "family": "world_victoriamemorial",
+    "params": [],
+    "topics": [
+      {
+        "title": "白色穹顶",
+        "text": "高穹顶与四周亭塔组成集中轮廓。"
+      },
+      {
+        "title": "对称长翼",
+        "text": "长翼与入口柱廊呼应花园中轴。"
+      }
+    ]
+  },
+  {
+    "id": "angkorwat",
+    "cn": "吴哥窟",
+    "en": "Angkor Wat",
+    "location": "柬埔寨 · 暹粒",
+    "use": "宗教建筑",
+    "style": "高棉建筑",
+    "date": "12 世纪主要营建阶段",
+    "source": "https://whc.unesco.org/en/list/668/",
+    "region": "asia",
+    "family": "world_angkorwat",
+    "params": [],
+    "topics": [
+      {
+        "title": "五塔山形",
+        "text": "五塔在多层台基上形成中心高、四角低的轮廓。"
+      },
+      {
+        "title": "层层回廊",
+        "text": "回廊围合递进的庭院。"
+      }
+    ]
+  },
+  {
+    "id": "borobudur",
+    "cn": "婆罗浮屠",
+    "en": "Borobudur",
+    "location": "印度尼西亚 · 中爪哇",
+    "use": "宗教建筑",
+    "style": "爪哇佛教建筑",
+    "date": "8—9 世纪主要营建阶段",
+    "source": "https://whc.unesco.org/en/list/592/",
+    "region": "asia",
+    "family": "world_borobudur",
+    "params": [],
+    "topics": [
+      {
+        "title": "方圆台地",
+        "text": "下层方台与上层圆台向中心收束。"
+      },
+      {
+        "title": "钟形佛塔",
+        "text": "小佛塔环绕中央大塔。"
+      }
+    ]
+  },
+  {
+    "id": "petronas",
+    "cn": "双子塔",
+    "en": "Petronas Twin Towers",
+    "location": "马来西亚 · 吉隆坡",
+    "use": "办公建筑",
+    "style": "当代",
+    "date": "1990 年代建成",
+    "source": "https://www.petronastwintowers.com.my/",
+    "region": "asia",
+    "family": "world_petronas",
+    "params": [],
+    "topics": [
+      {
+        "title": "双塔尖顶",
+        "text": "对称高层通过层层退台收成尖顶。"
+      },
+      {
+        "title": "空中连桥",
+        "text": "中部桥体连接两座塔楼。"
+      }
+    ]
+  },
+  {
+    "id": "marinabay",
+    "cn": "滨海湾金沙",
+    "en": "Marina Bay Sands",
+    "location": "新加坡",
+    "use": "酒店",
+    "style": "当代",
+    "date": "2010 年开放",
+    "source": "https://www.safdiearchitects.com/projects/marina-bay-sands",
+    "region": "asia",
+    "family": "world_marinabay",
+    "params": [],
+    "topics": [
+      {
+        "title": "三塔组合",
+        "text": "三座高层托起高处公共平台。"
+      },
+      {
+        "title": "船形屋顶",
+        "text": "长条平台跨过塔楼并向端部悬挑。"
+      }
+    ]
+  },
+  {
+    "id": "shwedagon",
+    "cn": "仰光大金塔",
+    "en": "Shwedagon Pagoda",
+    "location": "缅甸 · 仰光",
+    "use": "宗教建筑",
+    "style": "缅甸佛塔建筑",
+    "date": "历代增建与修复",
+    "source": "https://whc.unesco.org/en/tentativelists/6367/",
+    "region": "asia",
+    "family": "world_shwedagon",
+    "params": [],
+    "topics": [
+      {
+        "title": "金色主塔",
+        "text": "钟形塔身经环带过渡为细长尖顶。"
+      },
+      {
+        "title": "周边小塔",
+        "text": "小塔与台阶强化主塔中心地位。"
+      }
+    ]
+  },
+  {
+    "id": "watarun",
+    "cn": "郑王庙中央塔",
+    "en": "Wat Arun",
+    "location": "泰国 · 曼谷",
+    "use": "宗教建筑",
+    "style": "泰国传统建筑",
+    "date": "19 世纪主要扩建阶段",
+    "source": "https://www.tourismthailand.org/Attraction/wat-arun-ratchawararam-ratchawaramahawihan",
+    "region": "asia",
+    "family": "world_watarun",
+    "params": [],
+    "topics": [
+      {
+        "title": "高棉式塔体",
+        "text": "收分高塔由四角小塔环绕。"
+      },
+      {
+        "title": "陡阶与基座",
+        "text": "高台和阶梯强化竖向体验。"
+      }
+    ]
+  },
+  {
+    "id": "burjkhalifa",
+    "cn": "哈利法塔",
+    "en": "Burj Khalifa",
+    "location": "阿联酋 · 迪拜",
+    "use": "办公建筑",
+    "style": "当代",
+    "date": "2010 年启用",
+    "source": "https://www.som.com/projects/burj-khalifa/",
+    "region": "asia",
+    "family": "world_burjkhalifa",
+    "params": [],
+    "topics": [
+      {
+        "title": "三翼退台",
+        "text": "侧翼围绕核心交错退让，逐渐收束。"
+      },
+      {
+        "title": "顶部尖塔",
+        "text": "尖顶延续塔身上升轮廓。"
+      }
+    ]
+  },
+  {
+    "id": "burjalarab",
+    "cn": "帆船酒店",
+    "en": "Burj Al Arab",
+    "location": "阿联酋 · 迪拜",
+    "use": "酒店",
+    "style": "当代",
+    "date": "1999 年开放",
+    "source": "https://www.jumeirah.com/en/stay/dubai/burj-al-arab-jumeirah",
+    "region": "asia",
+    "family": "world_burjalarab",
+    "params": [],
+    "topics": [
+      {
+        "title": "帆形轮廓",
+        "text": "弧形外缘与竖向支撑围合帆状体量。"
+      },
+      {
+        "title": "悬挑平台",
+        "text": "上部悬挑平台成为识别点。"
+      }
+    ]
+  },
+  {
+    "id": "futuremuseum",
+    "cn": "未来博物馆",
+    "en": "Museum of the Future",
+    "location": "阿联酋 · 迪拜",
+    "use": "博物馆",
+    "style": "当代",
+    "date": "2022 年开放",
+    "source": "https://museumofthefuture.ae/",
+    "region": "asia",
+    "family": "world_futuremuseum",
+    "params": [],
+    "topics": [
+      {
+        "title": "环形体量",
+        "text": "倾斜椭圆环体围绕空洞连续展开。"
+      },
+      {
+        "title": "表皮开口",
+        "text": "原创条状开口示意窗洞分布，不复制书法原作。"
+      }
+    ]
+  },
+  {
+    "id": "zayedmosque",
+    "cn": "谢赫扎耶德大清真寺",
+    "en": "Sheikh Zayed Grand Mosque",
+    "location": "阿联酋 · 阿布扎比",
+    "use": "宗教建筑",
+    "style": "伊斯兰建筑",
+    "date": "2007 年开放",
+    "source": "https://www.szgmc.gov.ae/",
+    "region": "asia",
+    "family": "world_zayedmosque",
+    "params": [],
+    "topics": [
+      {
+        "title": "穹顶群",
+        "text": "大小白色穹顶围绕礼拜空间排列。"
+      },
+      {
+        "title": "四角宣礼塔",
+        "text": "细长塔楼标记庭院边界。"
+      }
+    ]
+  },
+  {
+    "id": "azadi",
+    "cn": "阿扎迪塔",
+    "en": "Azadi Tower",
+    "location": "伊朗 · 德黑兰",
+    "use": "纪念建筑",
+    "style": "现代主义",
+    "date": "1971 年落成",
+    "source": "https://www.visitiran.ir/attraction/azadi-tower",
+    "region": "asia",
+    "family": "world_azadi",
+    "params": [],
+    "topics": [
+      {
+        "title": "分叉塔脚",
+        "text": "四侧支腿向上汇合，形成穿越空间。"
+      },
+      {
+        "title": "几何拱面",
+        "text": "斜向与曲线构件组织上部体量。"
+      }
+    ]
+  },
+  {
+    "id": "shahmosque",
+    "cn": "伊斯法罕沙阿清真寺",
+    "en": "Shah Mosque · Isfahan",
+    "location": "伊朗 · 伊斯法罕",
+    "use": "宗教建筑",
+    "style": "伊斯兰建筑",
+    "date": "17 世纪主体建设",
+    "source": "https://whc.unesco.org/en/list/115/",
+    "region": "asia",
+    "family": "world_shahmosque",
+    "params": [],
+    "topics": [
+      {
+        "title": "蓝色穹顶",
+        "text": "高鼓座与蓝穹顶组织礼拜空间。"
+      },
+      {
+        "title": "伊万门庭",
+        "text": "高拱门与两侧宣礼塔共同形成入口。"
+      }
+    ]
+  },
+  {
+    "id": "brasilcathedral",
+    "cn": "巴西利亚主教座堂",
+    "en": "Cathedral of Brasília",
+    "location": "巴西 · 巴西利亚",
+    "use": "教堂",
+    "style": "现代主义",
+    "date": "1970 年落成",
+    "source": "https://whc.unesco.org/en/list/445/",
+    "region": "southamerica",
+    "family": "world_brasilcathedral",
+    "params": [],
+    "topics": [
+      {
+        "title": "双曲线柱冠",
+        "text": "弯曲混凝土柱向上张开，围成冠状轮廓。"
+      },
+      {
+        "title": "柱间玻璃",
+        "text": "柱间围护为内部引入光线。"
+      }
+    ]
+  },
+  {
+    "id": "brazilcongress",
+    "cn": "巴西国民议会大厦",
+    "en": "National Congress of Brazil",
+    "location": "巴西 · 巴西利亚",
+    "use": "议会建筑",
+    "style": "现代主义",
+    "date": "1960 年启用",
+    "source": "https://whc.unesco.org/en/list/445/",
+    "region": "southamerica",
+    "family": "world_brazilcongress",
+    "params": [],
+    "topics": [
+      {
+        "title": "双塔与双碗",
+        "text": "两座高层与一凹一凸的议事厅屋盖形成对照。"
+      },
+      {
+        "title": "水平平台",
+        "text": "长条基座将不同功能体量连接起来。"
+      }
+    ]
+  },
+  {
+    "id": "itamaraty",
+    "cn": "伊塔马拉蒂宫",
+    "en": "Itamaraty Palace",
+    "location": "巴西 · 巴西利亚",
+    "use": "公共建筑",
+    "style": "现代主义",
+    "date": "1970 年启用",
+    "source": "https://whc.unesco.org/en/list/445/",
+    "region": "southamerica",
+    "family": "world_itamaraty",
+    "params": [],
+    "topics": [
+      {
+        "title": "连续拱廊",
+        "text": "混凝土拱列沿水面展开，形成深廊。"
+      },
+      {
+        "title": "水庭",
+        "text": "倒影池将水平外缘延续到场地中。"
+      }
+    ]
+  },
+  {
+    "id": "alvorada",
+    "cn": "黎明宫",
+    "en": "Palácio da Alvorada",
+    "location": "巴西 · 巴西利亚",
+    "use": "宫殿",
+    "style": "现代主义",
+    "date": "1958 年建成",
+    "source": "https://whc.unesco.org/en/list/445/",
+    "region": "southamerica",
+    "family": "world_alvorada",
+    "params": [],
+    "topics": [
+      {
+        "title": "弧形支柱",
+        "text": "曲线柱列围绕玻璃主体，形成标志性外廊。"
+      },
+      {
+        "title": "玻璃主体",
+        "text": "通透围护位于柱列与水平屋盖之间。"
+      }
+    ]
+  },
+  {
+    "id": "planalto",
+    "cn": "普拉纳尔托宫",
+    "en": "Palácio do Planalto",
+    "location": "巴西 · 巴西利亚",
+    "use": "公共建筑",
+    "style": "现代主义",
+    "date": "1960 年启用",
+    "source": "https://whc.unesco.org/en/list/445/",
+    "region": "southamerica",
+    "family": "world_planalto",
+    "params": [],
+    "topics": [
+      {
+        "title": "外缘支柱",
+        "text": "曲线柱支撑长条屋盖，勾勒水平体量。"
+      },
+      {
+        "title": "坡道入口",
+        "text": "入口坡道将广场引向上层门厅。"
+      }
+    ]
+  },
+  {
+    "id": "masp",
+    "cn": "圣保罗艺术博物馆",
+    "en": "MASP",
+    "location": "巴西 · 圣保罗",
+    "use": "博物馆",
+    "style": "现代主义",
+    "date": "1968 年现馆启用",
+    "source": "https://masp.org.br/en/about",
+    "region": "southamerica",
+    "family": "world_masp",
+    "params": [],
+    "topics": [
+      {
+        "title": "红色巨梁",
+        "text": "两道红色门架承托悬空展厅。"
+      },
+      {
+        "title": "开放底层",
+        "text": "架空空间向城市开放。"
+      }
+    ]
+  },
+  {
+    "id": "niteroi",
+    "cn": "尼泰罗伊当代艺术博物馆",
+    "en": "Niterói Contemporary Art Museum",
+    "location": "巴西 · 尼泰罗伊",
+    "use": "博物馆",
+    "style": "现代主义",
+    "date": "1996 年开放",
+    "source": "https://smc.niteroi.rj.gov.br/espacos-culturais/mac/",
+    "region": "southamerica",
+    "family": "world_niteroi",
+    "params": [],
+    "topics": [
+      {
+        "title": "飞碟形展厅",
+        "text": "向外张开的圆形展厅由中央支柱托起。"
+      },
+      {
+        "title": "弧形坡道",
+        "text": "红色坡道沿外侧连接入口。"
+      }
+    ]
+  },
+  {
+    "id": "copan",
+    "cn": "科潘大厦",
+    "en": "Edifício Copan",
+    "location": "巴西 · 圣保罗",
+    "use": "住宅",
+    "style": "现代主义",
+    "date": "20 世纪中叶分期建设",
+    "source": "https://www.oscarniemeyer.org.br/obra/pro042",
+    "region": "southamerica",
+    "family": "world_copan",
+    "params": [],
+    "topics": [
+      {
+        "title": "波浪体量",
+        "text": "长条住宅沿曲线平面起伏延展。"
+      },
+      {
+        "title": "水平遮阳",
+        "text": "连续遮阳带统一大体量立面。"
+      }
+    ]
+  },
+  {
+    "id": "ibirapuera",
+    "cn": "伊比拉普埃拉礼堂",
+    "en": "Ibirapuera Auditorium",
+    "location": "巴西 · 圣保罗",
+    "use": "剧院",
+    "style": "当代",
+    "date": "2005 年开放",
+    "source": "https://www.oscarniemeyer.org.br/obra/pro535",
+    "region": "southamerica",
+    "family": "world_ibirapuera",
+    "params": [],
+    "topics": [
+      {
+        "title": "白色楔体",
+        "text": "白色体量沿剖面逐渐抬升。"
+      },
+      {
+        "title": "红色入口檐",
+        "text": "雕塑般的红色入口标记入场位置。"
+      }
+    ]
+  },
+  {
+    "id": "oscarniemeyer",
+    "cn": "奥斯卡·尼迈耶博物馆",
+    "en": "Oscar Niemeyer Museum",
+    "location": "巴西 · 库里蒂巴",
+    "use": "博物馆",
+    "style": "当代",
+    "date": "2002 年开放",
+    "source": "https://www.museuoscarniemeyer.org.br/",
+    "region": "southamerica",
+    "family": "world_oscarniemeyer",
+    "params": [],
+    "topics": [
+      {
+        "title": "眼形展馆",
+        "text": "抬高的眼形体量通过中央支撑落地。"
+      },
+      {
+        "title": "长条基座",
+        "text": "低矮馆体与高处展厅形成对照。"
+      }
+    ]
+  },
+  {
+    "id": "casarosada",
+    "cn": "阿根廷玫瑰宫",
+    "en": "Casa Rosada",
+    "location": "阿根廷 · 布宜诺斯艾利斯",
+    "use": "宫殿",
+    "style": "历史主义",
+    "date": "19 世纪分期建设与合并",
+    "source": "https://www.casarosada.gob.ar/",
+    "region": "southamerica",
+    "family": "world_casarosada",
+    "params": [],
+    "topics": [
+      {
+        "title": "粉色主立面",
+        "text": "粉色墙面与连续窗列面向广场展开。"
+      },
+      {
+        "title": "中央拱门",
+        "text": "中央拱部连接两个历史体量。"
+      }
+    ]
+  },
+  {
+    "id": "barolo",
+    "cn": "巴罗洛宫",
+    "en": "Palacio Barolo",
+    "location": "阿根廷 · 布宜诺斯艾利斯",
+    "use": "办公建筑",
+    "style": "折衷主义",
+    "date": "1923 年建成",
+    "source": "https://palaciobarolo.com.ar/",
+    "region": "southamerica",
+    "family": "world_barolo",
+    "params": [],
+    "topics": [
+      {
+        "title": "分层塔冠",
+        "text": "基座与收窄塔冠形成竖向序列。"
+      },
+      {
+        "title": "顶部灯亭",
+        "text": "圆形灯亭结束建筑的天际线。"
+      }
+    ]
+  },
+  {
+    "id": "teatrocolon",
+    "cn": "科隆剧院",
+    "en": "Teatro Colón",
+    "location": "阿根廷 · 布宜诺斯艾利斯",
+    "use": "剧院",
+    "style": "历史主义",
+    "date": "1908 年开放",
+    "source": "https://teatrocolon.org.ar/",
+    "region": "southamerica",
+    "family": "world_teatrocolon",
+    "params": [],
+    "topics": [
+      {
+        "title": "柱式入口",
+        "text": "柱式、拱窗与中央山花组织主入口。"
+      },
+      {
+        "title": "舞台高体",
+        "text": "后台高体量与观众厅屋盖形成层次。"
+      }
+    ]
+  },
+  {
+    "id": "laplata",
+    "cn": "拉普拉塔主教座堂",
+    "en": "Cathedral of La Plata",
+    "location": "阿根廷 · 拉普拉塔",
+    "use": "教堂",
+    "style": "哥特复兴",
+    "date": "1884 年起建设，塔楼后续完成",
+    "source": "https://catedraldelaplata.com.ar/",
+    "region": "southamerica",
+    "family": "world_laplata",
+    "params": [],
+    "topics": [
+      {
+        "title": "红砖双尖塔",
+        "text": "高耸双塔与砖墙形成竖向轮廓。"
+      },
+      {
+        "title": "尖拱窗饰",
+        "text": "尖拱与玫瑰窗组织主立面。"
+      }
+    ]
+  },
+  {
+    "id": "salvo",
+    "cn": "萨尔沃宫",
+    "en": "Palacio Salvo",
+    "location": "乌拉圭 · 蒙得维的亚",
+    "use": "住宅",
+    "style": "折衷主义",
+    "date": "1928 年建成",
+    "source": "https://www.descubrimontevideo.uy/",
+    "region": "southamerica",
+    "family": "world_salvo",
+    "params": [],
+    "topics": [
+      {
+        "title": "转角高塔",
+        "text": "高塔从宽阔街角基座中升起。"
+      },
+      {
+        "title": "层叠冠部",
+        "text": "分层塔冠强调广场入口位置。"
+      }
+    ]
+  },
+  {
+    "id": "lamoneda",
+    "cn": "拉莫内达宫",
+    "en": "Palacio de La Moneda",
+    "location": "智利 · 圣地亚哥",
+    "use": "宫殿",
+    "style": "新古典主义",
+    "date": "18 世纪末至 19 世纪初建设",
+    "source": "https://www.monumentos.gob.cl/monumentos/talagante/palacio-la-moneda",
+    "region": "southamerica",
+    "family": "world_lamoneda",
+    "params": [],
+    "topics": [
+      {
+        "title": "对称宫墙",
+        "text": "浅色墙面与规整窗列体现对称构图。"
+      },
+      {
+        "title": "内部庭院",
+        "text": "连续房间围合内庭，形成清晰平面秩序。"
+      }
+    ]
+  },
+  {
+    "id": "costanera",
+    "cn": "圣地亚哥大塔",
+    "en": "Gran Torre Santiago",
+    "location": "智利 · 圣地亚哥",
+    "use": "办公建筑",
+    "style": "当代",
+    "date": "2010 年代投入使用",
+    "source": "https://skycostanera.cl/",
+    "region": "southamerica",
+    "family": "world_costanera",
+    "params": [],
+    "topics": [
+      {
+        "title": "收束玻璃塔",
+        "text": "高层体量在顶部渐渐收分。"
+      },
+      {
+        "title": "中央塔冠",
+        "text": "冠部与连续幕墙形成竖向线条。"
+      }
+    ]
+  },
+  {
+    "id": "laslajas",
+    "cn": "拉斯拉哈斯圣殿",
+    "en": "Las Lajas Sanctuary",
+    "location": "哥伦比亚 · 伊皮亚莱斯",
+    "use": "教堂",
+    "style": "哥特复兴",
+    "date": "20 世纪上半叶建设",
+    "source": "https://colombia.travel/en/ipiales",
+    "region": "southamerica",
+    "family": "world_laslajas",
+    "params": [],
+    "topics": [
+      {
+        "title": "峡谷桥台",
+        "text": "教堂立于峡谷上方高桥台。"
+      },
+      {
+        "title": "尖塔与拱窗",
+        "text": "尖塔和尖拱窗饰强调教堂主体。"
+      }
+    ]
+  },
+  {
+    "id": "quitobasilica",
+    "cn": "基多国家誓言圣殿",
+    "en": "Basílica del Voto Nacional",
+    "location": "厄瓜多尔 · 基多",
+    "use": "教堂",
+    "style": "哥特复兴",
+    "date": "19 世纪末起营建",
+    "source": "https://visitquito.ec/",
+    "region": "southamerica",
+    "family": "world_quitobasilica",
+    "params": [],
+    "topics": [
+      {
+        "title": "双塔西立面",
+        "text": "细长双塔与中央花窗组织入口。"
+      },
+      {
+        "title": "长轴中殿",
+        "text": "重复扶壁与高窗表现纵向空间。"
+      }
+    ]
+  },
+  {
+    "id": "machupicchu",
+    "cn": "马丘比丘太阳神庙",
+    "en": "Temple of the Sun · Machu Picchu",
+    "location": "秘鲁 · 库斯科",
+    "use": "神庙",
+    "style": "印加建筑",
+    "date": "15 世纪主要营建阶段",
+    "source": "https://whc.unesco.org/en/list/274/",
+    "region": "southamerica",
+    "family": "world_machupicchu",
+    "params": [],
+    "topics": [
+      {
+        "title": "弧形石墙",
+        "text": "精细砌筑的弧形墙围合仪式空间。"
+      },
+      {
+        "title": "山地台地",
+        "text": "层叠台地让建筑与山势衔接。"
+      }
+    ]
   }
 ]

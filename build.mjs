@@ -6,7 +6,7 @@ const orbit=enc(await fs.readFile('dist/vendor/OrbitControls.js','utf8'));
 const expansion=enc(await fs.readFile('expansion.js','utf8'));
 const locations=enc(await fs.readFile('locations.js','utf8'));
 const geo=JSON.parse(await fs.readFile('assets/countries.json','utf8'));
-const europe={type:'FeatureCollection',features:geo.features.filter(f=>['Europe','Asia','Africa','North America'].includes(f.properties.CONTINENT)).map(f=>({type:'Feature',properties:{name:f.properties.NAME},geometry:f.geometry}))};
+const europe={type:'FeatureCollection',features:geo.features.filter(f=>['Europe','Asia','Africa','North America','South America','Oceania'].includes(f.properties.CONTINENT)).map(f=>({type:'Feature',properties:{name:f.properties.NAME},geometry:f.geometry}))};
 const map=enc((await fs.readFile('map.js','utf8')).replace("'./locations.js'",JSON.stringify(locations)).replace('__SATELLITE__','data:image/jpeg;base64,'+(await fs.readFile('assets/blue-marble.jpg')).toString('base64')).replace('__COUNTRIES__',JSON.stringify(europe)));
 const model=enc((await fs.readFile('model.js','utf8')).replace("'./dist/vendor/BufferGeometryUtils.js'",JSON.stringify(util)).replace("'./expansion.js'",JSON.stringify(expansion)));
 const voxel=enc(await fs.readFile('voxel.js','utf8'));
