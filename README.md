@@ -1,8 +1,10 @@
-# 石与光 · 欧洲建筑图鉴
+# 石与光 · 建筑图鉴
+
+馆藏现包含欧洲 100 座、北美 20 座，支持原版建筑与赛博像素风。
 
 ## 🌍 在线体验
 
-**[点击这里，在线探索 100 座欧洲建筑 →](https://european-architecture-atlas-392e.vercel.app/dist/index.html)**
+**[点击这里，在线探索 120 座欧洲与北美建筑 →](https://european-architecture-atlas-392e.vercel.app/dist/index.html)**
 
 无需安装，支持手机和电脑。可在欧洲地图上选取建筑，按功能与风格筛选，并旋转、缩放查看三维模型。
 
@@ -31,3 +33,29 @@
 新增 50 座包括沙特尔、圣家堂、凡尔赛宫、萨伏伊别墅、朗香教堂、埃菲尔铁塔和伦敦塔桥等建筑。新增模型与资料位于 `expansion.js`，可编辑数据清单位于根目录 `collection-additions.json`。年代链接指向 UNESCO、场馆或建筑师资料；历史街区与系列遗产链接提供建筑背景。
 
 `node tests/validate-catalog.mjs` 检查馆藏数量、分类、年代链接和单文件打包；`node tests/validate-structure.mjs` 检查全部 100 座模型。新增模型是按代表性体量与构件组织的教学示意，不等同于测绘模型。
+
+## 方块像素风与背景配色
+
+建筑展厅新增“原版建筑 / 赛博像素风”开关。像素风提供“明亮世界”和“蓝紫赛博”两套背景、灯光及场景配色，并在当前浏览器保存选择。方块根据当前建筑按需生成，支持全馆目录与地图选取；巴黎、科隆的屋顶拆解和结构配色，以及全馆剖切保持联动。
+
+新增 voxel.js，负责方块化、场景、主题、图层同步和资源释放。兼容软件渲染环境保留原版建筑，并提示像素风需要 WebGL。
+
+验证命令：node tests/validate-voxel.mjs。离线 HTML 仍为 dist/index.html。
+
+
+## 北美馆藏与全屏检索
+
+新增美国 12 座、加拿大 4 座、墨西哥 4 座，现共 120 座。地图提供跨洋全览、欧洲、北美三个范围；地区、功能、风格、搜索联动筛选。建筑选择后地图可移向其所在位置。
+
+全屏模式内使用同一组实时地区、类型、风格、搜索与建筑选择控件；搜索支持名称、城市、类型和风格关键词。退出全屏后保留筛选和展品，恢复原页面布局。筛选栏可折叠以增加观察空间。
+
+北美模型按代表性体量、构件和两处观察热点分别建模，全部支持原版、方块化及明亮/蓝紫主题。它们仍是教学示意：例如 UNAM 壁画使用原创抽象图案表达覆盖范围，没有复制艺术作品。
+
+北美资料、年代及场馆来源链接随条目记录在 collection-additions.json；近似坐标在 locations.js。新增模型位于 expansion.js 的 na_ 系列配方。运行全部检查：
+
+- node tests/validate-catalog.mjs
+- node tests/validate-map.mjs
+- node tests/validate-structure.mjs
+- node tests/validate-voxel.mjs
+
+只验证北美方块模型时设置 ATLAS_TEST_REGION=northamerica，再运行最后一项。

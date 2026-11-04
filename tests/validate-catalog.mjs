@@ -8,13 +8,13 @@ const first=viewer.slice(viewer.indexOf('const exhibits='),viewer.indexOf('let t
 const second=viewer.slice(viewer.indexOf('const stylesByBuilding ='),viewer.indexOf('const allIds ='));
 const state=vm.runInNewContext(first+'\n'+second+'\n({exhibits,chronology,stylesByBuilding})',{additions});
 const ids=Object.keys(state.stylesByBuilding);
-assert.equal(ids.length,100);assert.equal(new Set(ids).size,100);
+assert.equal(ids.length,120);assert.equal(new Set(ids).size,120);
 for(const id of ids){assert(state.chronology[id],id);assert.match(state.chronology[id][1],/^https:\/\//);if(!['paris','cologne'].includes(id)){const d=state.exhibits[id];assert.equal(d.length,15,id);for(const i of [0,1,2,3,4,5,9,10,14])assert(d[i]?.length,id);}}
 const uses=[...new Set(ids.flatMap(id=>state.stylesByBuilding[id][0].split('|')))];
 const styles=[...new Set(ids.flatMap(id=>state.stylesByBuilding[id][1].split('|')))];
 for(const field of [0,1])for(const label of field?styles:uses){const matches=ids.filter(id=>state.stylesByBuilding[id][field].split('|').includes(label));assert(matches.length);}
 const built=await fs.readFile(new URL('../dist/index.html',import.meta.url),'utf8');
 assert(!built.includes('/*APP*/'));assert(!built.includes('<!--IMPORTMAP-->'));
-assert(!built.includes("from './expansion.js'"));assert(built.includes('01 / 100'));
+assert(!built.includes("from './expansion.js'"));assert(built.includes('01 / 120'));
 assert.deepEqual(JSON.parse(await fs.readFile(new URL('../collection-additions.json',import.meta.url),'utf8')),additions);
 console.log(JSON.stringify({result:'PASS',buildings:ids.length,newBuildings:additions.length,functionFilters:uses.length,styleFilters:styles.length,standaloneBytes:Buffer.byteLength(built)}));

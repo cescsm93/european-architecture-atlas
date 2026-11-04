@@ -27,8 +27,8 @@ function surfaceTextures(kind) {
  const noise = seededTile(seed);
  const stained = ['paris','cologne','chapelle','florence'].includes(kind);
  const marble = ['florence','pisa','finlandia'].includes(kind);
- const smooth = ['helsinki','amalien','bauhaus','neue'].includes(kind);
- const brickwork = ['albert','pantheon'].includes(kind);
+ const smooth = ['helsinki','amalien','bauhaus','neue','empirestate','chrysler','onewtc','guggenheimny','seagram','spaceneedle','disneyhall','uscapitol','jefferson','cntower','habitat67','torontocityhall','barragan','unamlibrary'].includes(kind);
+ const brickwork = ['albert','pantheon','robie'].includes(kind);
  const glassPigments = [[51,71,110],[80,54,70],[82,103,120],[135,99,65],[45,87,92],[79,71,102]];
  const clamp = x => Math.max(0, Math.min(255, Math.round(x)));
  const texture = (bytes, srgb) => {
@@ -142,7 +142,7 @@ export function buildCathedral(kind='paris'){
  const cologne=kind==='cologne';
  const root=new T.Group(), layers={}, buckets={};
  const gilded = ['garnier','amalien'].includes(kind);
- const modern = ['neue','bauhaus','finlandia','rockchurch'].includes(kind);
+ const modern = ['neue','bauhaus','finlandia','rockchurch','onewtc','seagram','disneyhall','spaceneedle','cntower','torontocityhall','guggenheimny','habitat67','barragan','unamlibrary'].includes(kind);
  const palette={stone:cologne?0xaaa492:gilded?0xe6d7bf:modern?0xdbdcd7:0xe4d9c1,
   edge:cologne?0xc7bfab:0xf0e6d2,roof:modern?0x525c61:0x65727a,glass:0xd0dce0,
   bronze:gilded?0xbbab75:0x79988f,rib:0xcbba9c,ground:0x373631};

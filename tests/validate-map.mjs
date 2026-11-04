@@ -8,9 +8,9 @@ const a=v.slice(v.indexOf('const exhibits='),v.indexOf('let topics=parisTopics')
 const b=v.slice(v.indexOf('const stylesByBuilding ='),v.indexOf('const allIds ='));
 const {stylesByBuilding}=vm.runInNewContext(a+';'+b+';({stylesByBuilding})',{additions});
 assert.deepEqual(Object.keys(locations).sort(),Object.keys(stylesByBuilding).sort());
-for(const [id,[lat,lon]] of Object.entries(locations)){assert(lat>=35&&lat<=70,id);assert(lon>=-25&&lon<=35,id);}
+for(const [id,[lat,lon]] of Object.entries(locations)){const na=additions.some(e=>e.id===id&&e.region==='northamerica');assert(lat>=(na?18:35)&&lat<=70,id);assert(lon>=(na?-130:-25)&&lon<=(na?-60:35),id);}
 const img=await fs.readFile(new URL('../assets/blue-marble.jpg',import.meta.url));assert.equal(img[0],255);assert.equal(img[1],216);
 const geo=JSON.parse(await fs.readFile(new URL('../assets/countries.json',import.meta.url)));assert(geo.features.length>150);
 const html=await fs.readFile(new URL('../dist/index.html',import.meta.url),'utf8');
 assert(!html.includes('__SATELLITE__'));assert(!html.includes('__COUNTRIES__'));assert(!html.includes("from './map.js'"));
-console.log('PASS: 100 unique building coordinates; valid geographic bounds; embedded satellite image and boundaries.');
+console.log('PASS: 120 unique building coordinates; valid geographic bounds; embedded satellite image and boundaries.');

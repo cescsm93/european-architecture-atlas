@@ -1234,5 +1234,465 @@
         "text": "连续拱廊连接中央大厅与侧翼。"
       }
     ]
+  },
+  {
+    "id": "empirestate",
+    "cn": "帝国大厦",
+    "en": "Empire State Building",
+    "location": "美国 · 纽约",
+    "use": "办公建筑|观景塔",
+    "style": "装饰艺术",
+    "date": "1930—1931 年",
+    "source": "https://www.esbnyc.com/about/history",
+    "family": "na_empirestate",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "退台塔身",
+        "text": "逐级退让的体量将宽基座过渡为细长塔身。"
+      },
+      {
+        "title": "塔冠与天线",
+        "text": "顶部塔冠与细长天线延续建筑的竖向轴线。"
+      }
+    ]
+  },
+  {
+    "id": "chrysler",
+    "cn": "克莱斯勒大厦",
+    "en": "Chrysler Building",
+    "location": "美国 · 纽约",
+    "use": "办公建筑",
+    "style": "装饰艺术",
+    "date": "1929—1930 年",
+    "source": "https://chryslerbuilding.com/history/",
+    "family": "na_chrysler",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "放射状塔冠",
+        "text": "层层弧形金属冠部与三角开口构成独特轮廓。"
+      },
+      {
+        "title": "退台基座",
+        "text": "塔身通过分层退台逐步收窄，四角形成清晰转折。"
+      }
+    ]
+  },
+  {
+    "id": "onewtc",
+    "cn": "世界贸易中心一号楼",
+    "en": "One World Trade Center",
+    "location": "美国 · 纽约",
+    "use": "办公建筑|观景塔",
+    "style": "当代|高技派",
+    "date": "2014 年投入使用",
+    "source": "https://wtc.com/work-place/1wtc/",
+    "family": "na_onewtc",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "切角玻璃塔",
+        "text": "方形基座向上转化为切角的玻璃立面。"
+      },
+      {
+        "title": "顶部尖塔",
+        "text": "顶部细长尖塔与棱面塔身共同形成天际线。"
+      }
+    ]
+  },
+  {
+    "id": "guggenheimny",
+    "cn": "纽约古根海姆博物馆",
+    "en": "Solomon R. Guggenheim Museum",
+    "location": "美国 · 纽约",
+    "use": "博物馆",
+    "style": "现代主义|有机建筑",
+    "date": "1959 年开放",
+    "source": "https://www.guggenheim.org/about-us/history",
+    "family": "na_guggenheimny",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "螺旋展廊",
+        "text": "向上扩展的连续外缘示意内部螺旋展廊的组织。"
+      },
+      {
+        "title": "顶部采光",
+        "text": "中央圆厅由顶部采光，与外圈的展览坡道相连。"
+      }
+    ]
+  },
+  {
+    "id": "fallingwater",
+    "cn": "流水别墅",
+    "en": "Fallingwater",
+    "location": "美国 · 宾夕法尼亚",
+    "use": "别墅|住宅",
+    "style": "现代主义|有机建筑",
+    "date": "1936—1939 年分期建造",
+    "source": "https://fallingwater.org/history/",
+    "family": "na_fallingwater",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "悬挑露台",
+        "text": "水平露台从石砌核心向溪流上方伸出。"
+      },
+      {
+        "title": "石墙与溪流",
+        "text": "竖向石墙、岩台与水流衬托水平楼板。"
+      }
+    ]
+  },
+  {
+    "id": "robie",
+    "cn": "罗比住宅",
+    "en": "Frederick C. Robie House",
+    "location": "美国 · 芝加哥",
+    "use": "住宅|博物馆",
+    "style": "现代主义|草原学派",
+    "date": "1908—1910 年",
+    "source": "https://flwright.org/explore/robie-house",
+    "family": "na_robie",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "深远屋檐",
+        "text": "低缓屋顶与深远挑檐强调横向展开的体量。"
+      },
+      {
+        "title": "连续窗带",
+        "text": "窗带、砖墙和露台形成层层相叠的水平线。"
+      }
+    ]
+  },
+  {
+    "id": "seagram",
+    "cn": "西格拉姆大厦",
+    "en": "Seagram Building",
+    "location": "美国 · 纽约",
+    "use": "办公建筑",
+    "style": "现代主义|国际式",
+    "date": "1958 年建成",
+    "source": "https://s-media.nyc.gov/agencies/lpc/lp/1664.pdf",
+    "family": "na_seagram",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "青铜色幕墙",
+        "text": "纤细竖向构件划分玻璃表皮，表现规整的立面节奏。"
+      },
+      {
+        "title": "后退广场",
+        "text": "塔体向后退让，入口前留出开敞广场。"
+      }
+    ]
+  },
+  {
+    "id": "transamerica",
+    "cn": "泛美金字塔",
+    "en": "Transamerica Pyramid",
+    "location": "美国 · 旧金山",
+    "use": "办公建筑",
+    "style": "现代主义|结构表现",
+    "date": "1972 年建成",
+    "source": "https://www.transamerica.com/about-us/history",
+    "family": "na_transamerica",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "四面锥形塔",
+        "text": "细长金字塔形体量向顶部逐渐收拢。"
+      },
+      {
+        "title": "侧翼与底层支撑",
+        "text": "两侧突出体与底层斜撑丰富塔身的结构轮廓。"
+      }
+    ]
+  },
+  {
+    "id": "spaceneedle",
+    "cn": "太空针塔",
+    "en": "Space Needle",
+    "location": "美国 · 西雅图",
+    "use": "观景塔",
+    "style": "现代主义|未来主义",
+    "date": "1962 年开放",
+    "source": "https://www.spaceneedle.com/history",
+    "family": "na_spaceneedle",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "飞碟形观景层",
+        "text": "宽大的顶部观景体量与纤细支撑形成对比。"
+      },
+      {
+        "title": "三组塔腿",
+        "text": "三组倾斜塔腿向中央收束，再托起观景层。"
+      }
+    ]
+  },
+  {
+    "id": "disneyhall",
+    "cn": "华特迪士尼音乐厅",
+    "en": "Walt Disney Concert Hall",
+    "location": "美国 · 洛杉矶",
+    "use": "音乐厅",
+    "style": "当代|解构主义",
+    "date": "2003 年开放",
+    "source": "https://www.musiccenter.org/visit-explore/visit-explore/campus/walt-disney-concert-hall/",
+    "family": "na_disneyhall",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "不锈钢曲面",
+        "text": "弯折的金属表皮在不同方向接收和反射光线。"
+      },
+      {
+        "title": "入口玻璃厅",
+        "text": "玻璃入口位于金属体量之间，形成进入音乐厅的过渡。"
+      }
+    ]
+  },
+  {
+    "id": "uscapitol",
+    "cn": "美国国会大厦",
+    "en": "United States Capitol",
+    "location": "美国 · 华盛顿",
+    "use": "议会建筑",
+    "style": "新古典主义",
+    "date": "1793 年始建，19 世纪持续扩建",
+    "source": "https://www.aoc.gov/explore-capitol-campus/buildings-grounds/capitol-building/history",
+    "family": "na_uscapitol",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "中央穹顶",
+        "text": "高鼓座与双层穹顶组织建筑的中心。"
+      },
+      {
+        "title": "南北两翼",
+        "text": "两侧长翼与中央柱廊形成横向展开的主立面。"
+      }
+    ]
+  },
+  {
+    "id": "jefferson",
+    "cn": "杰斐逊纪念堂",
+    "en": "Thomas Jefferson Memorial",
+    "location": "美国 · 华盛顿",
+    "use": "纪念建筑",
+    "style": "新古典主义",
+    "date": "1938 年动工，1943 年落成",
+    "source": "https://home.nps.gov/thje/learn/historyculture/memorialconstruction.htm",
+    "family": "na_jefferson",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "环形柱廊",
+        "text": "圆形柱廊围绕中央纪念空间展开。"
+      },
+      {
+        "title": "低缓穹顶",
+        "text": "低缓穹顶与入口三角山花共同表达古典秩序。"
+      }
+    ]
+  },
+  {
+    "id": "cntower",
+    "cn": "加拿大国家电视塔",
+    "en": "CN Tower",
+    "location": "加拿大 · 多伦多",
+    "use": "观景塔|公共建筑",
+    "style": "现代主义|结构表现",
+    "date": "1973—1976 年",
+    "source": "https://www.cntower.ca/history",
+    "family": "na_cntower",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "混凝土塔身",
+        "text": "细长塔身由基部向上收拢，承托高处观景舱。"
+      },
+      {
+        "title": "观景舱与天线",
+        "text": "宽观景舱、上部小观景层和天线形成竖向层次。"
+      }
+    ]
+  },
+  {
+    "id": "habitat67",
+    "cn": "栖居 67",
+    "en": "Habitat 67",
+    "location": "加拿大 · 蒙特利尔",
+    "use": "住宅",
+    "style": "现代主义|粗野主义",
+    "date": "1967 年建成",
+    "source": "https://www.safdiearchitects.com/projects/habitat-67",
+    "family": "na_habitat67",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "叠置住宅单元",
+        "text": "错动堆叠的预制单元形成高密度住宅聚落。"
+      },
+      {
+        "title": "空中露台",
+        "text": "上层单元退让，为下层住宅留出露台和采光。"
+      }
+    ]
+  },
+  {
+    "id": "torontocityhall",
+    "cn": "多伦多市政厅",
+    "en": "Toronto City Hall",
+    "location": "加拿大 · 多伦多",
+    "use": "市政建筑",
+    "style": "现代主义",
+    "date": "1965 年开放",
+    "source": "https://www.toronto.ca/services-payments/venues-facilities-bookings/booking-city-facilities/city-hall/tours-points-of-interest/",
+    "family": "na_torontocityhall",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "弧形双塔",
+        "text": "两座高低不同的弧形塔楼面向中部议事空间。"
+      },
+      {
+        "title": "中央议事厅",
+        "text": "低矮圆形议事厅位于两塔之间，与广场衔接。"
+      }
+    ]
+  },
+  {
+    "id": "montrealbasilica",
+    "cn": "蒙特利尔圣母大教堂",
+    "en": "Notre-Dame Basilica of Montréal",
+    "location": "加拿大 · 蒙特利尔",
+    "use": "教堂",
+    "style": "哥特复兴",
+    "date": "1824—1829 年主体，双塔后续完成",
+    "source": "https://www.basiliquenotredame.ca/en/history-and-heritage",
+    "family": "na_montrealbasilica",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "双塔西立面",
+        "text": "平顶双塔和三联尖拱组织面向广场的立面。"
+      },
+      {
+        "title": "长轴中殿",
+        "text": "连续的侧窗与扶壁表达长轴礼拜空间。"
+      }
+    ]
+  },
+  {
+    "id": "bellasartes",
+    "cn": "墨西哥城美术宫",
+    "en": "Palacio de Bellas Artes",
+    "location": "墨西哥 · 墨西哥城",
+    "use": "剧院|博物馆",
+    "style": "新艺术运动|装饰艺术",
+    "date": "1904 年起建设，1934 年开放",
+    "source": "https://inba.gob.mx/recinto/1",
+    "family": "na_bellasartes",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "彩色穹顶",
+        "text": "橙黄的穹顶屋面位于白色石材主体上方。"
+      },
+      {
+        "title": "柱式入口",
+        "text": "柱式门庭与弧形窗洞共同组成主立面。"
+      }
+    ]
+  },
+  {
+    "id": "barragan",
+    "cn": "巴拉干住宅与工作室",
+    "en": "Luis Barragán House and Studio",
+    "location": "墨西哥 · 墨西哥城",
+    "use": "住宅|博物馆",
+    "style": "现代主义|地域主义",
+    "date": "1948 年建成",
+    "source": "https://whc.unesco.org/en/list/1136",
+    "family": "na_barragan",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "朴素街道立面",
+        "text": "灰色街墙以少量开口形成克制的街道界面。"
+      },
+      {
+        "title": "内向庭院与色墙",
+        "text": "庭院、露台与彩色墙片组织内向的空间层次。"
+      }
+    ]
+  },
+  {
+    "id": "unamlibrary",
+    "cn": "墨西哥国立自治大学中央图书馆",
+    "en": "UNAM Central Library",
+    "location": "墨西哥 · 墨西哥城",
+    "use": "大学图书馆",
+    "style": "现代主义|壁画艺术",
+    "date": "1956 年开放",
+    "source": "https://www.gaceta.unam.mx/inseparables-juan-ogorman-y-la-biblioteca-central-de-la-unam/",
+    "family": "na_unamlibrary",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "壁画外墙",
+        "text": "四面外墙被石材拼贴壁画覆盖；模型用原创抽象图案示意，不复刻原作。"
+      },
+      {
+        "title": "高体与低基座",
+        "text": "书库高体量置于水平基座之上，形成鲜明对比。"
+      }
+    ]
+  },
+  {
+    "id": "chichen",
+    "cn": "奇琴伊察库库尔坎金字塔",
+    "en": "El Castillo · Chichén Itzá",
+    "location": "墨西哥 · 尤卡坦",
+    "use": "神庙|遗址",
+    "style": "玛雅建筑|前哥伦布时期",
+    "date": "现存主要阶段约公元 9—12 世纪",
+    "source": "https://lugares.inah.gob.mx/es/node/5663",
+    "family": "na_chichen",
+    "params": [],
+    "region": "northamerica",
+    "topics": [
+      {
+        "title": "九层台基",
+        "text": "逐层收分的台基承托顶部神庙。"
+      },
+      {
+        "title": "四向阶梯",
+        "text": "四个方向的陡直阶梯连接地面与顶层平台。"
+      }
+    ]
   }
 ]
